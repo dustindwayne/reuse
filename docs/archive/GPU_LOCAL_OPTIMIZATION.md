@@ -1,3 +1,5 @@
+> Historical record. Superseded by the [frozen lifecycle findings](../GPU_LIFECYCLE.md). Older conclusions remain here to preserve the experiment trail.
+
 # Local elapsed-time optimization: block-cache stage
 
 Provenance: supplied local-run report, received 2026-10-08. This session has not inspected the raw timings or local implementation. The later [chunk-cache report](GPU_CHUNK_LOOKUP.md) supersedes the update conclusions below. These changes and measurements were not committed or pushed from the desktop when reported; this document records the findings, not an integrated implementation.

@@ -1,5 +1,13 @@
 # Validation
 
+## Current checked-in and local evidence
+
+The checked-in GPU prototype has 45 passing tests in this CPU workspace. The supplied newer desktop report records 49 passing tests and 252 paired complete GPU lifecycles with 1,197 bitwise output / byte-exact reconstruction comparisons across three frozen sessions. These are different implementations. Updated local code, raw runs, logs and the freeze manifest have not been integrated or independently inspected here; see [current GPU findings](GPU_LIFECYCLE.md). Documentation link validation covers this cleanup.
+
+The CPU shared-store measurements and raw runs are checked in under [fast compute](FAST_COMPUTE.md). Historical language-model validation below is retained as an earlier stage, not the current test count or current performance claim.
+
+## Historical language-model validation
+
 Completed 2026-10-07:
 
 - 16 unit tests pass, including numerical gradient checks, data split disjointness, train-only vocabulary, unknown tokens, trie fallback, residual reconstruction and causal randomized routing.
@@ -17,4 +25,4 @@ GitHub upload completed 2026-10-08: the private repository contains all 14 devel
 
 [CI run 37721547238](https://github.com/dustindwayne/structural-residual-lm/actions/runs/37721547238) passed on a fresh GitHub-hosted Ubuntu runner using Python 3.12. It installed dependencies, passed the 16 unit tests, regenerated data and ran baseline, structural and residual benchmarks. Hosted dependency resolution therefore succeeds; this workflow does not assert bitwise loss reproduction across dependency versions or hardware. The imported final snapshot also triggers the same workflow; current status is available in [Actions](https://github.com/dustindwayne/structural-residual-lm/actions).
 
-Remaining check before public publication: primary chat quotation/date verification. The archive and Git bundle retain the original local development history.
+Historical quotation/date verification remains separate from current measured claims. Current release review requires integrating the actual optimized source, raw GPU session records and freeze manifest, verifying reproducibility, and accurately scoping the workload. The archive and Git bundle retain the original local development history. Public release is not authorized by documentation cleanup.

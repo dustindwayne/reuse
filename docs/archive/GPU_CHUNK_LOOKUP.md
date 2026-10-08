@@ -1,3 +1,5 @@
+> Historical record. Superseded by the [frozen lifecycle findings](../GPU_LIFECYCLE.md). Older conclusions remain here to preserve the experiment trail.
+
 # Chunk lookup and complete elapsed time
 
 Provenance: supplied local-run report, received 2026-10-08. The report supersedes the earlier [block-cache update conclusions](GPU_LOCAL_OPTIMIZATION.md). This session has not inspected the local implementation or raw run JSON. Local changes and raw timings remain uncommitted on the desktop; this commit records the supplied results only.
