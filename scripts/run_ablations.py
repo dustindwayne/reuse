@@ -26,5 +26,13 @@ def main():
             result=json.loads(output.read_text());summary.append(dict(condition=name,seed=seed,loss=result["validation"]["loss"],
                 accuracy=result["validation"]["accuracy"],end_to_end_tokens_per_second=result["end_to_end_tokens_per_second"],
                 neural_eval_tokens_per_second=result["neural_eval_tokens_per_second"],block_skipped=result["estimated_block_compute_skipped"],parameters=result["parameters"]))
-    (folder/"summary.json").write_text(json.dumps(summary,indent=2)+"\n")
+    # Merge partial reruns without silently losing other completed conditions.
+    merged={}
+    for condition in CONDITIONS:
+        for result_path in sorted(folder.glob(condition+"_[0-9]*.json")):
+            result=json.loads(result_path.read_text());seed=result["config"]["seed"]
+            merged[(condition,seed)]=dict(condition=condition,seed=seed,loss=result["validation"]["loss"],
+                accuracy=result["validation"]["accuracy"],end_to_end_tokens_per_second=result["end_to_end_tokens_per_second"],
+                neural_eval_tokens_per_second=result["neural_eval_tokens_per_second"],block_skipped=result["estimated_block_compute_skipped"],parameters=result["parameters"])
+    (folder/"summary.json").write_text(json.dumps(list(merged.values()),indent=2)+"\n")
 if __name__=="__main__":main()

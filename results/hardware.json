@@ -1,0 +1,7 @@
+{
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "exposed_cpu_threads": 9,
+  "architecture": "x86_64",
+  "device": "CPU",
+  "note": "Captured in the same workspace after the benchmark suite; physical CPU name does not imply all host cores were allocated."
+}

@@ -17,9 +17,9 @@
     ],
     "random_surprise": true
   },
-  "timestamp": "2026-10-07T20:50:07.615971+00:00",
+  "timestamp": "2026-10-07T20:51:48.873269+00:00",
   "environment": {
-    "git_commit": "bcf46f559c896371512984b4250a188bf962834d",
+    "git_commit": "3618f8ee820f47b4d85c5e33051b7b098b98d55e",
     "git_dirty": true,
     "python": "3.12.14",
     "numpy": "2.3.5",
@@ -27,7 +27,7 @@
     "machine": "x86_64",
     "cpu_threads": 9,
     "device": "CPU",
-    "peak_ram_mib": 97.5390625,
+    "peak_ram_mib": 95.87890625,
     "peak_vram_mib": null,
     "vram_note": "CPU-only run; GPU allocation not applicable",
     "blas_threads": {
@@ -41,76 +41,76 @@
     "validation": "962f59369df0613c03dd86d56c2f9ffd255b1746c4629395f2ab7d1c902fe267"
   },
   "parameters": 12384,
-  "structural_preprocessing_seconds": 4.983603497999866,
+  "structural_preprocessing_seconds": 5.381141971000034,
   "trie_nodes": 578,
   "training_examples": 26512,
   "validation_examples": 6640,
   "train": {
-    "loss": 0.7702228532814435,
-    "perplexity": 2.1602476184165735,
-    "accuracy": 0.611949305974653
+    "loss": 0.7775199239421647,
+    "perplexity": 2.1760687516939647,
+    "accuracy": 0.6116098370549186
   },
   "validation": {
-    "loss": 0.7757478330421294,
-    "perplexity": 2.1722159748049106,
-    "accuracy": 0.6051204819277108
+    "loss": 0.7836120689631327,
+    "perplexity": 2.1893661417924797,
+    "accuracy": 0.6037650602409639
   },
-  "train_seconds": 0.2341932550002639,
-  "training_tokens_per_second": 136639.28963267512,
-  "end_to_end_eval_seconds": 0.9042407320002894,
-  "end_to_end_tokens_per_second": 7343.177281244033,
+  "train_seconds": 0.2464461439999468,
+  "training_tokens_per_second": 129845.81329057804,
+  "end_to_end_eval_seconds": 0.8867384799996216,
+  "end_to_end_tokens_per_second": 7488.115323474891,
   "end_to_end_repeats_seconds": [
-    0.9192267280000124,
-    0.9042407320002894,
-    0.8844444480000675
+    0.9108469590000823,
+    0.8867384799996216,
+    0.8712317819999953
   ],
-  "neural_eval_seconds": 0.010649243999978353,
-  "neural_eval_tokens_per_second": 623518.439432273,
+  "neural_eval_seconds": 0.010043435000170575,
+  "neural_eval_tokens_per_second": 661128.3888318317,
   "neural_eval_repeats_seconds": [
-    0.010615133000101196,
-    0.011948271000164823,
-    0.010785549000047467,
-    0.010649243999978353,
-    0.008898772000065946
+    0.00895196900000883,
+    0.010043435000170575,
+    0.008858250000230328,
+    0.010295763000158331,
+    0.010436384000058752
   ],
-  "estimated_block_compute_skipped": 0.35195783132530123,
+  "estimated_block_compute_skipped": 0.3161144578313253,
   "compute_level_fractions": {
-    "0": 0.3516566265060241,
-    "1": 0.0006024096385542169,
-    "2": 0.6477409638554217
+    "0": 0.1674698795180723,
+    "1": 0.297289156626506,
+    "2": 0.5352409638554216
   },
-  "estimated_dense_matmul_skipped": 0.13961963556706164,
+  "estimated_dense_matmul_skipped": 0.12540077666036045,
   "curve": [
     {
       "step": 1,
-      "train_batch_loss": 4.183174107754693,
-      "validation_loss": 3.8298348866456524
+      "train_batch_loss": 4.195498200866423,
+      "validation_loss": 3.8025365463646748
     },
     {
       "step": 51,
-      "train_batch_loss": 0.958625599145935,
-      "validation_loss": 1.0403971708652873
+      "train_batch_loss": 0.9084704320573759,
+      "validation_loss": 0.9591239593384019
     },
     {
       "step": 101,
-      "train_batch_loss": 0.8062391152119108,
-      "validation_loss": 0.854016595935878
+      "train_batch_loss": 0.8305549327722375,
+      "validation_loss": 0.8411928251094807
     },
     {
       "step": 151,
-      "train_batch_loss": 0.9409451774499865,
-      "validation_loss": 0.8090117683250257
+      "train_batch_loss": 0.919039141557874,
+      "validation_loss": 0.802732682620813
     },
     {
       "step": 201,
-      "train_batch_loss": 0.7694130629058656,
-      "validation_loss": 0.7938438179813556
+      "train_batch_loss": 0.7510565932968225,
+      "validation_loss": 0.8100503561937805
     },
     {
       "step": 250,
-      "train_batch_loss": 0.8095676646269668,
-      "validation_loss": 0.7757478330421294
+      "train_batch_loss": 0.8289684886634685,
+      "validation_loss": 0.7836120689631327
     }
   ],
-  "runtime_seconds": 8.08410297499995
+  "runtime_seconds": 8.461465067000063
 }
