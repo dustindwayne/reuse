@@ -29,9 +29,25 @@ def run(config,output=None):
     for _ in range(5):
         t=time.perf_counter();evaluate(m,vx,vy,vf,vlevels);latencies.append(time.perf_counter()-t)
     latency=float(np.median(latencies))
+    # Include feature construction and scoring, excluding one-time trie fit.
+    online_times=[]
+    for _ in range(3):
+        t=time.perf_counter()
+        online_f=online_levels=None
+        if predictor is not None:
+            from structural_residual_lm.experiment import feature_split
+            online_f,online_levels,_=feature_split(predictor,d["validation_sequences"],d["validation"][2],config)
+        evaluate(m,vx,vy,online_f,online_levels)
+        online_times.append(time.perf_counter()-t)
+    online_latency=float(np.median(online_times))
+    checkpoint=Path("results/checkpoints")/(Path(output).stem if output else config["system"])
+    checkpoint.parent.mkdir(parents=True,exist_ok=True)
+    np.savez(str(checkpoint)+".npz",**m.p)
+    Path(str(checkpoint)+".json").write_text(json.dumps(dict(config=config,vocab=d["vocab"],dataset_hashes=d["hashes"]),indent=2)+"\n")
     result=dict(system=config["system"],config=config,timestamp=datetime.now(timezone.utc).isoformat(),environment=environment(),dataset_hashes=d["hashes"],
                 parameters=m.parameter_count,structural_preprocessing_seconds=feature_seconds,trie_nodes=0 if predictor is None else predictor.trie.node_count(),training_examples=len(y),validation_examples=len(vy),train=train,validation=validation,
                 train_seconds=train_seconds,training_tokens_per_second=config["steps"]*config["batch_size"]/train_seconds,
+                end_to_end_eval_seconds=online_latency,end_to_end_tokens_per_second=len(vy)/online_latency,end_to_end_repeats_seconds=online_times,
                 neural_eval_seconds=latency,neural_eval_tokens_per_second=len(vy)/latency,neural_eval_repeats_seconds=latencies,
                 estimated_block_compute_skipped=0. if vlevels is None else float(1-vlevels.mean()/2),
                 compute_level_fractions={str(k):float(np.mean(vlevels==k)) for k in range(3)} if vlevels is not None else {"2":1.},

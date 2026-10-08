@@ -13,6 +13,7 @@ class StructuralPredictor:
 
     def signal(self, history):
         if not history: raise ValueError("Need observed history")
+        history=history[-(self.trie.depth+1):]
         e=self.encoder;states=[e.state(t) for t in history];dimension=len(e.names)
         previous=self.trie.predict(states[:-1],dimension)
         next_state=self.trie.predict(states,dimension)
