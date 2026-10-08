@@ -37,10 +37,6 @@ To use a local natural-text corpus, run `python scripts/prepare_data.py --input 
 
 Benchmarks save JSON metrics, a feature/gate CSV for structural systems and local checkpoints under ignored `results/checkpoints`. `predict.py` prints top next-token probabilities from a trained checkpoint; it verifies corpus hashes for the deterministic prior. Results include the actual configuration, seed, dataset hashes, Git commit, environment, timing repeats and parameter count.
 
-## Why this exists
-
-Earlier work explored selective access to large models, submarine-window activity and trie-based structure learning. The new experiment asks whether deterministic prediction and observed residual uncertainty can guide neural computation. Original chat records were not recovered; [original notes](docs/ORIGINAL_NOTES.md) preserve reported wording with explicit secondary-source labels. The [timeline](docs/TIMELINE.md) separates supported artifact dates from unresolved search leads.
-
 ## Evidence and limits
 
 - [Measured results and ablations](RESULTS.md)
