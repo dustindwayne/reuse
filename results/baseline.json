@@ -11,9 +11,9 @@
     "learning_rate": 0.005,
     "data": "data"
   },
-  "timestamp": "2026-10-07T20:41:35.761184+00:00",
+  "timestamp": "2026-10-07T20:44:36.228694+00:00",
   "environment": {
-    "git_commit": "3f9b7d144f4e32da3509c8d6b42117fd92dd639f",
+    "git_commit": "bcf46f559c896371512984b4250a188bf962834d",
     "git_dirty": false,
     "python": "3.12.14",
     "numpy": "2.3.5",
@@ -21,7 +21,7 @@
     "machine": "x86_64",
     "cpu_threads": 9,
     "device": "CPU",
-    "peak_ram_mib": 35.42578125,
+    "peak_ram_mib": 37.2265625,
     "peak_vram_mib": null,
     "vram_note": "CPU-only run; GPU allocation not applicable",
     "blas_threads": {
@@ -35,6 +35,8 @@
     "validation": "962f59369df0613c03dd86d56c2f9ffd255b1746c4629395f2ab7d1c902fe267"
   },
   "parameters": 9984,
+  "structural_preprocessing_seconds": 1.3630001376441214e-06,
+  "trie_nodes": 0,
   "training_examples": 26512,
   "validation_examples": 6640,
   "train": {
@@ -47,18 +49,29 @@
     "perplexity": 2.1842441791142364,
     "accuracy": 0.6131024096385542
   },
-  "train_seconds": 0.2717858979999619,
-  "training_tokens_per_second": 117739.73644506194,
-  "neural_eval_seconds": 0.010803331999795773,
-  "neural_eval_tokens_per_second": 614625.1915728891,
+  "train_seconds": 0.26558866899995337,
+  "training_tokens_per_second": 120487.067917817,
+  "end_to_end_eval_seconds": 0.010013950999564258,
+  "end_to_end_tokens_per_second": 663074.9441742754,
+  "end_to_end_repeats_seconds": [
+    0.010041412000191485,
+    0.009840369000357896,
+    0.010013950999564258
+  ],
+  "neural_eval_seconds": 0.010691390999909345,
+  "neural_eval_tokens_per_second": 621060.4401294745,
   "neural_eval_repeats_seconds": [
-    0.01125202299999728,
-    0.010474038000211294,
-    0.010803331999795773,
-    0.010533718000260706,
-    0.011007236000295961
+    0.010768656999971427,
+    0.01063643800034697,
+    0.010691390999909345,
+    0.01085939300037353,
+    0.01062744399996518
   ],
   "estimated_block_compute_skipped": 0.0,
+  "compute_level_fractions": {
+    "2": 1.0
+  },
+  "estimated_dense_matmul_skipped": 0.0,
   "curve": [
     {
       "step": 1,
@@ -91,5 +104,5 @@
       "validation_loss": 0.781269855256834
     }
   ],
-  "runtime_seconds": 0.44397233999961827
+  "runtime_seconds": 0.4687323890002517
 }

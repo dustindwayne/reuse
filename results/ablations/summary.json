@@ -1,0 +1,422 @@
+[
+  {
+    "condition": "baseline",
+    "seed": 7,
+    "loss": 0.781269855256834,
+    "accuracy": 0.6131024096385542,
+    "end_to_end_tokens_per_second": 652649.4471403357,
+    "neural_eval_tokens_per_second": 634624.5010671832,
+    "block_skipped": 0.0,
+    "parameters": 9984
+  },
+  {
+    "condition": "baseline",
+    "seed": 11,
+    "loss": 0.7676487054447514,
+    "accuracy": 0.6094879518072289,
+    "end_to_end_tokens_per_second": 505075.66815518955,
+    "neural_eval_tokens_per_second": 524498.8764816185,
+    "block_skipped": 0.0,
+    "parameters": 9984
+  },
+  {
+    "condition": "baseline",
+    "seed": 23,
+    "loss": 0.7736173109416069,
+    "accuracy": 0.6085843373493975,
+    "end_to_end_tokens_per_second": 622393.0262213451,
+    "neural_eval_tokens_per_second": 561737.8205543967,
+    "block_skipped": 0.0,
+    "parameters": 9984
+  },
+  {
+    "condition": "structural",
+    "seed": 7,
+    "loss": 0.7728431835192152,
+    "accuracy": 0.6043674698795181,
+    "end_to_end_tokens_per_second": 6841.362302381751,
+    "neural_eval_tokens_per_second": 722941.0986046842,
+    "block_skipped": 0.0,
+    "parameters": 11232
+  },
+  {
+    "condition": "structural",
+    "seed": 11,
+    "loss": 0.7739395824078666,
+    "accuracy": 0.6016566265060241,
+    "end_to_end_tokens_per_second": 7620.2051557533105,
+    "neural_eval_tokens_per_second": 714838.8377655646,
+    "block_skipped": 0.0,
+    "parameters": 11232
+  },
+  {
+    "condition": "structural",
+    "seed": 23,
+    "loss": 0.7758684206983852,
+    "accuracy": 0.6019578313253012,
+    "end_to_end_tokens_per_second": 7729.836388254954,
+    "neural_eval_tokens_per_second": 714557.5167278991,
+    "block_skipped": 0.0,
+    "parameters": 11232
+  },
+  {
+    "condition": "residual",
+    "seed": 7,
+    "loss": 0.7729357517793882,
+    "accuracy": 0.6063253012048193,
+    "end_to_end_tokens_per_second": 7451.147839674227,
+    "neural_eval_tokens_per_second": 751559.542641162,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "residual",
+    "seed": 11,
+    "loss": 0.7715843962268071,
+    "accuracy": 0.6031626506024096,
+    "end_to_end_tokens_per_second": 6757.818621092777,
+    "neural_eval_tokens_per_second": 641746.9124305377,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "residual",
+    "seed": 23,
+    "loss": 0.776614377098229,
+    "accuracy": 0.6015060240963855,
+    "end_to_end_tokens_per_second": 6992.202682034868,
+    "neural_eval_tokens_per_second": 771831.8569121049,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_trie",
+    "seed": 7,
+    "loss": 0.7825500668174294,
+    "accuracy": 0.6117469879518073,
+    "end_to_end_tokens_per_second": 7048.620072379753,
+    "neural_eval_tokens_per_second": 595758.9677777386,
+    "block_skipped": 0.0,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_trie",
+    "seed": 11,
+    "loss": 0.7703821520627733,
+    "accuracy": 0.6073795180722892,
+    "end_to_end_tokens_per_second": 7147.684928848315,
+    "neural_eval_tokens_per_second": 637554.1885038811,
+    "block_skipped": 0.0,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_trie",
+    "seed": 23,
+    "loss": 0.7742739399933276,
+    "accuracy": 0.6087349397590361,
+    "end_to_end_tokens_per_second": 7369.129506582958,
+    "neural_eval_tokens_per_second": 633035.5110942277,
+    "block_skipped": 0.0,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_prefix",
+    "seed": 7,
+    "loss": 0.7715394001793461,
+    "accuracy": 0.6066265060240964,
+    "end_to_end_tokens_per_second": 6969.343308282866,
+    "neural_eval_tokens_per_second": 742756.2251356803,
+    "block_skipped": 0.3227409638554217,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_prefix",
+    "seed": 11,
+    "loss": 0.7711825678715694,
+    "accuracy": 0.6031626506024096,
+    "end_to_end_tokens_per_second": 6843.177011752296,
+    "neural_eval_tokens_per_second": 785348.1475195304,
+    "block_skipped": 0.3227409638554217,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_prefix",
+    "seed": 23,
+    "loss": 0.7763176638328155,
+    "accuracy": 0.6031626506024096,
+    "end_to_end_tokens_per_second": 6636.898703339653,
+    "neural_eval_tokens_per_second": 738711.837869154,
+    "block_skipped": 0.3227409638554217,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_suffix",
+    "seed": 7,
+    "loss": 0.774901793847441,
+    "accuracy": 0.6082831325301205,
+    "end_to_end_tokens_per_second": 5663.773984518797,
+    "neural_eval_tokens_per_second": 722474.012168988,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_suffix",
+    "seed": 11,
+    "loss": 0.771052350300011,
+    "accuracy": 0.6046686746987951,
+    "end_to_end_tokens_per_second": 6340.157801849617,
+    "neural_eval_tokens_per_second": 663762.9038783237,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_suffix",
+    "seed": 23,
+    "loss": 0.774920703390958,
+    "accuracy": 0.6019578313253012,
+    "end_to_end_tokens_per_second": 6180.984749819832,
+    "neural_eval_tokens_per_second": 738815.8139927622,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_chunk",
+    "seed": 7,
+    "loss": 0.774660765415387,
+    "accuracy": 0.6063253012048193,
+    "end_to_end_tokens_per_second": 6299.944565801596,
+    "neural_eval_tokens_per_second": 767416.7780596539,
+    "block_skipped": 0.35640060240963856,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_chunk",
+    "seed": 11,
+    "loss": 0.7714197001252778,
+    "accuracy": 0.6021084337349397,
+    "end_to_end_tokens_per_second": 6566.9219983201465,
+    "neural_eval_tokens_per_second": 687524.0478262276,
+    "block_skipped": 0.35640060240963856,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_chunk",
+    "seed": 23,
+    "loss": 0.777704351185657,
+    "accuracy": 0.6019578313253012,
+    "end_to_end_tokens_per_second": 7063.380488604804,
+    "neural_eval_tokens_per_second": 764435.5127333632,
+    "block_skipped": 0.35640060240963856,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_vc",
+    "seed": 7,
+    "loss": 0.773170280099927,
+    "accuracy": 0.6131024096385542,
+    "end_to_end_tokens_per_second": 6678.979714470395,
+    "neural_eval_tokens_per_second": 770823.3159269243,
+    "block_skipped": 0.35481927710843375,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_vc",
+    "seed": 11,
+    "loss": 0.7721938248215365,
+    "accuracy": 0.605722891566265,
+    "end_to_end_tokens_per_second": 6631.588161994425,
+    "neural_eval_tokens_per_second": 689262.7193346801,
+    "block_skipped": 0.35481927710843375,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_vc",
+    "seed": 23,
+    "loss": 0.7792850135107587,
+    "accuracy": 0.6067771084337349,
+    "end_to_end_tokens_per_second": 6587.221861005651,
+    "neural_eval_tokens_per_second": 712995.6339675151,
+    "block_skipped": 0.35481927710843375,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_residual",
+    "seed": 7,
+    "loss": 0.7726099149002787,
+    "accuracy": 0.6079819277108434,
+    "end_to_end_tokens_per_second": 7106.338855437283,
+    "neural_eval_tokens_per_second": 730470.9579332265,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_residual",
+    "seed": 11,
+    "loss": 0.7720777651795427,
+    "accuracy": 0.6019578313253012,
+    "end_to_end_tokens_per_second": 7459.957423033896,
+    "neural_eval_tokens_per_second": 794668.2547325161,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_residual",
+    "seed": 23,
+    "loss": 0.7756638062445721,
+    "accuracy": 0.6049698795180722,
+    "end_to_end_tokens_per_second": 7365.969506644735,
+    "neural_eval_tokens_per_second": 731196.60213029,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_gating",
+    "seed": 7,
+    "loss": 0.7752484901188273,
+    "accuracy": 0.6079819277108434,
+    "end_to_end_tokens_per_second": 6605.282056248223,
+    "neural_eval_tokens_per_second": 640109.574421086,
+    "block_skipped": 0.0,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_gating",
+    "seed": 11,
+    "loss": 0.7728923205989581,
+    "accuracy": 0.6033132530120482,
+    "end_to_end_tokens_per_second": 7455.448298514792,
+    "neural_eval_tokens_per_second": 681309.9743884497,
+    "block_skipped": 0.0,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_gating",
+    "seed": 23,
+    "loss": 0.7731835555254011,
+    "accuracy": 0.6031626506024096,
+    "end_to_end_tokens_per_second": 6804.095472780784,
+    "neural_eval_tokens_per_second": 611937.0674101362,
+    "block_skipped": 0.0,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_confidence",
+    "seed": 7,
+    "loss": 0.778746497212228,
+    "accuracy": 0.6100903614457831,
+    "end_to_end_tokens_per_second": 7352.975244562459,
+    "neural_eval_tokens_per_second": 778421.1345040392,
+    "block_skipped": 0.3979668674698795,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_confidence",
+    "seed": 11,
+    "loss": 0.7716737641473946,
+    "accuracy": 0.6045180722891567,
+    "end_to_end_tokens_per_second": 7298.277350666217,
+    "neural_eval_tokens_per_second": 762770.4604319021,
+    "block_skipped": 0.3979668674698795,
+    "parameters": 12384
+  },
+  {
+    "condition": "no_confidence",
+    "seed": 23,
+    "loss": 0.7761769717324419,
+    "accuracy": 0.6045180722891567,
+    "end_to_end_tokens_per_second": 7758.138182089663,
+    "neural_eval_tokens_per_second": 789580.8621833455,
+    "block_skipped": 0.3979668674698795,
+    "parameters": 12384
+  },
+  {
+    "condition": "random_structure",
+    "seed": 7,
+    "loss": 0.780246774583856,
+    "accuracy": 0.6099397590361446,
+    "end_to_end_tokens_per_second": 7612.76640104937,
+    "neural_eval_tokens_per_second": 777542.9665645701,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "random_structure",
+    "seed": 11,
+    "loss": 0.7721776341045351,
+    "accuracy": 0.6066265060240964,
+    "end_to_end_tokens_per_second": 7340.857246206531,
+    "neural_eval_tokens_per_second": 729365.3587707017,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "random_structure",
+    "seed": 23,
+    "loss": 0.7752905364507356,
+    "accuracy": 0.6070783132530121,
+    "end_to_end_tokens_per_second": 7355.739434835694,
+    "neural_eval_tokens_per_second": 645191.6316565805,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "random_surprise",
+    "seed": 7,
+    "loss": 0.789446753317354,
+    "accuracy": 0.6064759036144578,
+    "end_to_end_tokens_per_second": 7372.050824668875,
+    "neural_eval_tokens_per_second": 759446.2995671472,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "random_surprise",
+    "seed": 11,
+    "loss": 0.786652198393504,
+    "accuracy": 0.6010542168674698,
+    "end_to_end_tokens_per_second": 7413.245652621423,
+    "neural_eval_tokens_per_second": 775783.7694463044,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "random_surprise",
+    "seed": 23,
+    "loss": 0.7757478330421294,
+    "accuracy": 0.6051204819277108,
+    "end_to_end_tokens_per_second": 7343.177281244033,
+    "neural_eval_tokens_per_second": 623518.439432273,
+    "block_skipped": 0.35195783132530123,
+    "parameters": 12384
+  },
+  {
+    "condition": "fixed_compute",
+    "seed": 7,
+    "loss": 0.7824770016151948,
+    "accuracy": 0.6108433734939759,
+    "end_to_end_tokens_per_second": 6877.215662294297,
+    "neural_eval_tokens_per_second": 827501.7721538232,
+    "block_skipped": 0.5,
+    "parameters": 12384
+  },
+  {
+    "condition": "fixed_compute",
+    "seed": 11,
+    "loss": 0.7728737661055213,
+    "accuracy": 0.6001506024096386,
+    "end_to_end_tokens_per_second": 7387.388343185692,
+    "neural_eval_tokens_per_second": 737798.2721799724,
+    "block_skipped": 0.5,
+    "parameters": 12384
+  },
+  {
+    "condition": "fixed_compute",
+    "seed": 23,
+    "loss": 0.7732338366606641,
+    "accuracy": 0.6018072289156626,
+    "end_to_end_tokens_per_second": 7161.625099744197,
+    "neural_eval_tokens_per_second": 767183.3176313902,
+    "block_skipped": 0.5,
+    "parameters": 12384
+  }
+]

@@ -1,0 +1,14 @@
+system: residual
+seed: 7
+context: 4
+embedding: 12
+hidden: 48
+steps: 250
+batch_size: 128
+learning_rate: 0.005
+data: data
+trie_depth: 3
+thresholds:
+- 0.25
+- 0.5
+fixed_level: 1

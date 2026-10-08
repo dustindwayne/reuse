@@ -16,17 +16,17 @@
       0.5
     ]
   },
-  "timestamp": "2026-10-07T20:43:17.069287+00:00",
+  "timestamp": "2026-10-07T20:44:52.850108+00:00",
   "environment": {
-    "git_commit": "78b0faf697c8442289e13fffbc1f443c1eb9f96e",
-    "git_dirty": false,
+    "git_commit": "bcf46f559c896371512984b4250a188bf962834d",
+    "git_dirty": true,
     "python": "3.12.14",
     "numpy": "2.3.5",
     "platform": "Linux",
     "machine": "x86_64",
     "cpu_threads": 9,
     "device": "CPU",
-    "peak_ram_mib": 100.62890625,
+    "peak_ram_mib": 95.875,
     "peak_vram_mib": null,
     "vram_note": "CPU-only run; GPU allocation not applicable",
     "blas_threads": {
@@ -40,7 +40,7 @@
     "validation": "962f59369df0613c03dd86d56c2f9ffd255b1746c4629395f2ab7d1c902fe267"
   },
   "parameters": 12384,
-  "structural_preprocessing_seconds": 6.4831555990003835,
+  "structural_preprocessing_seconds": 4.960974861000068,
   "trie_nodes": 578,
   "training_examples": 26512,
   "validation_examples": 6640,
@@ -54,16 +54,23 @@
     "perplexity": 2.1661161076443194,
     "accuracy": 0.6063253012048193
   },
-  "train_seconds": 0.23686168999984147,
-  "training_tokens_per_second": 135099.93954708934,
-  "neural_eval_seconds": 0.008855421999669488,
-  "neural_eval_tokens_per_second": 749823.1027553318,
+  "train_seconds": 0.23074828800008618,
+  "training_tokens_per_second": 138679.2520861002,
+  "end_to_end_eval_seconds": 0.9279220059997897,
+  "end_to_end_tokens_per_second": 7155.7738226562815,
+  "end_to_end_repeats_seconds": [
+    0.9279220059997897,
+    0.9330068889998984,
+    0.874216664999949
+  ],
+  "neural_eval_seconds": 0.008939319000091928,
+  "neural_eval_tokens_per_second": 742785.8878211771,
   "neural_eval_repeats_seconds": [
-    0.008855421999669488,
-    0.00859001500020895,
-    0.008579588999964471,
-    0.010132312999758142,
-    0.010216748999937408
+    0.008939319000091928,
+    0.008661200999995344,
+    0.00952140400022472,
+    0.00904309599991393,
+    0.00854137099986474
   ],
   "estimated_block_compute_skipped": 0.35195783132530123,
   "compute_level_fractions": {
@@ -104,5 +111,5 @@
       "validation_loss": 0.7729357517793882
     }
   ],
-  "runtime_seconds": 6.880174502000045
+  "runtime_seconds": 8.087540415000149
 }
