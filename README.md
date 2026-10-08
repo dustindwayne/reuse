@@ -12,7 +12,7 @@ python scripts/benchmark_fast.py /path/to/corpora
 
 ## GPU computation reuse
 
-The [CUDA reuse path](docs/GPU_COMPUTE.md) computes distinct blocks once and gathers every full output. Its complete-data benchmark is ready for the desktop GPU; **no GPU speedup has been measured yet**. Public readiness remains pending actual GPU results.
+The [CUDA reuse path](docs/GPU_COMPUTE.md) computes distinct blocks once and gathers every full output. Supplied [local chunk-cache measurements](docs/GPU_CHUNK_LOOKUP.md) report 7.53% and 13.53% lower complete elapsed time for two constructed updates, while cold construction is 24.59% slower. A complete lifecycle advantage is not established. The local optimization code and raw timings are not yet integrated; public readiness remains on hold.
 
 ## About this work
 

@@ -1,8 +1,10 @@
-# GPU computation reuse: implementation ready, measurements pending
+# GPU computation reuse: prototype and local findings
 
-Status: **no GPU improvement has been measured**. The current Work session exposes a cloud browser and a CPU workspace, not the user's desktop GPU. PyTorch is absent in the workspace. The benchmark records `status: blocked` instead of silently substituting CPU results. Keep the repository private pending actual GPU measurements and review.
+Status: supplied desktop GPU reports now show faster chunk-cache updates and slower cold construction. See [latest chunk-cache findings](GPU_CHUNK_LOOKUP.md) and [earlier block-cache findings](GPU_LOCAL_OPTIMIZATION.md). A complete lifecycle elapsed-time advantage remains unproven. Keep the repository private.
 
-## Implemented path
+The descriptions and commands below concern the **checked-in initial prototype**. The optimized desktop implementation and raw run files have not been integrated. The existing `results/lossless/gpu_compute.json` records the earlier workspace execution blocker; it is not the latest desktop result. No raw timings have been fabricated or replaced with summary figures.
+
+## Checked-in prototype path
 
 `BlockPlan` covers every byte of every input file. It finds the same bounded content boundaries as the fast store, splits each chunk into fixed-width local blocks, verifies duplicate bytes, and records references. It retains exact original lengths, file hashes and version manifests. Tail blocks are zero-padded only for computation; byte reconstruction uses their original contents.
 
@@ -12,7 +14,7 @@ The GPU benchmark uses float32 row-wise real FFT: a concrete block-local spectra
 
 Both paths reconstruct all original bytes, verify hashes, and return every GPU output to host memory. Full computed outputs must compare bitwise equal. A rounding difference between CUDA batching configurations fails the exact-reuse gate; it is not hidden behind a numerical tolerance.
 
-## Measurements and review gate
+## Prototype timing and review gate
 
 The timer includes CPU boundary finding, hashing and lookup, packing, host-to-device transfer, FFT computation, GPU gathering, full device-to-host transfer, complete byte reconstruction and integrity checks. Input disk reads and independent final assertions are outside timing. CUDA synchronization brackets the complete wall timer; CUDA events separately measure the cast-plus-FFT regions. Those device regions omit transfer and gather costs, which remain in total wall time.
 
@@ -38,9 +40,9 @@ python scripts/benchmark_gpu.py data/corpora --repeats 7
 
 Read `results/lossless/gpu_compute.json`. A blocked or failed status does not establish GPU savings. Generated corpus inputs are ignored by Git. Avoid publishing until actual hardware results are reviewed. The script requires no access to personal files; it downloads and verifies the pinned public corpus inputs.
 
-## Validation completed in this session
+## Initial prototype validation
 
-45 tests pass. Four new CPU reference tests verify exact original-byte reconstruction, full dense/reused output equality, reuse after insertion, distinct tail lengths, changed operation configurations, integrity rejection and output shape checks. The CUDA runner and CUDA timing branch compile but have not executed here. No GPU timing or speedup is inferred from the CPU reference tests.
+45 tests pass. Four new CPU reference tests verify exact original-byte reconstruction, full dense/reused output equality, reuse after insertion, distinct tail lengths, changed operation configurations, integrity rejection and output shape checks. The CUDA runner and CUDA timing branch compiled but did not execute in this workspace. The separate desktop report now records 49 passing tests for its newer local code. No GPU timing or speedup is inferred from the CPU reference tests.
 
 ## Handoff for a desktop-enabled Work tab
 
