@@ -29,7 +29,7 @@ class StructuralEncoder:
         features += [float(s in t) for s in self.chunks]
         a = np.asarray(features, dtype=np.float64)
         for i,name in enumerate(self.names):
-            if any(name.startswith(group+"_") for group in self.disabled): a[i] = 0
+            if any(name.startswith(group+"_") or (group=="vc" and name in ["vowel_ratio","initial_vowel","final_vowel"]) for group in self.disabled): a[i] = 0
         return a
 
     def state(self, token):
