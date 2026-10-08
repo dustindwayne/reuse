@@ -49,6 +49,7 @@ Earlier work explored selective access to large models, submarine-window activit
 - [Experiment design](docs/EXPERIMENTS.md)
 - [Failures and corrections](docs/FAILURE_LOG.md)
 - [Resume description](docs/RESUME.md)
+- [Validation and remaining checks](docs/VALIDATION.md)
 
 This is a small fixed-context feed-forward model and designed grammar dataset. It does not establish Transformer scaling, novel-vocabulary generalization, semantic reasoning, full-model paging or production savings. Structural configurations add feature-projection parameters. Skipped block work is not total FLOPs or wall-time reduction. Three seeds and small loss differences do not establish statistical superiority. The confidence/surprise formula and thresholds are experimental choices, not calibrated measures of difficulty.
 
