@@ -1,6 +1,18 @@
 # Structural Residual LM
 
-An experimental investigation into whether predictable linguistic structure can be handled deterministically so neural computation can focus on residual uncertainty.
+Current direction: a **lossless shared representation** that stores distinct pieces once and preserves exact reconstruction. The new [lossless foundation](docs/LOSSLESS.md) implements shared byte and sequence definitions, a binary file format, exact decoding and measured storage comparisons.
+
+950,000 copies of `s` serialize to 58 bytes and reconstruct exactly. On the synthetic training corpus, the grammar uses 31,691 bytes versus 112,445 raw bytes; zlib uses 9,357 bytes. This is a representation foundation, not yet a residual language model.
+
+```bash
+python scripts/benchmark_lossless.py
+python scripts/lossless.py pack data/train.txt train.lsg
+python scripts/lossless.py unpack train.lsg restored.txt
+```
+
+## Earlier lossy experiment
+
+The sections below describe the earlier implementation and its historical measurements. It did not implement the lossless shared representation or residual-only neural prediction.
 
 ## Research question
 

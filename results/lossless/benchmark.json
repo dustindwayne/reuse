@@ -1,0 +1,44 @@
+[
+  {
+    "name": "s_950000",
+    "input_bytes": 950000,
+    "grammar_bytes": 58,
+    "zlib_bytes": 944,
+    "unique_byte_definitions": 1,
+    "pair_definitions": 18,
+    "root_references": 14,
+    "definition_analysis_visits": 19,
+    "build_seconds": 1.9665490629999454,
+    "decode_seconds": 0.31180397399998583,
+    "sha256": "8891c69517eaf8a1365423e37bd4d096829f3306945bd3897af252875ab6774b",
+    "exact_roundtrip": true
+  },
+  {
+    "name": "mixed_exact_text",
+    "input_bytes": 19,
+    "grammar_bytes": 42,
+    "zlib_bytes": 27,
+    "unique_byte_definitions": 16,
+    "pair_definitions": 0,
+    "root_references": 19,
+    "definition_analysis_visits": 16,
+    "build_seconds": 7.289799998488888e-05,
+    "decode_seconds": 2.8511999971669866e-05,
+    "sha256": "4df6aeebbc189e7e181957a76c837c691c192d79b2093373dbb2499ec5cf304c",
+    "exact_roundtrip": true
+  },
+  {
+    "name": "synthetic_train",
+    "input_bytes": 112445,
+    "grammar_bytes": 31691,
+    "zlib_bytes": 9357,
+    "unique_byte_definitions": 25,
+    "pair_definitions": 103,
+    "root_references": 31451,
+    "definition_analysis_visits": 128,
+    "build_seconds": 4.969834673999912,
+    "decode_seconds": 0.023237106999999924,
+    "sha256": "2f29bf0867b49e90a646c7d1645a20ebe9364ebb8f48648446874cf2925f87c7",
+    "exact_roundtrip": true
+  }
+]
