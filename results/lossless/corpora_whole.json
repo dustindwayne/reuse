@@ -1,0 +1,274 @@
+{
+  "files": [
+    {
+      "path": "calgary/bib",
+      "raw_bytes": 111261,
+      "selected_mode": 6,
+      "selected_payload_bytes": 33401,
+      "direct_zlib_bytes": 35228,
+      "encode_seconds": 3.051959813999929,
+      "decode_seconds": 0.034199119999811955,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/book1",
+      "raw_bytes": 768771,
+      "selected_mode": 6,
+      "selected_payload_bytes": 306209,
+      "direct_zlib_bytes": 313582,
+      "encode_seconds": 20.305623706999995,
+      "decode_seconds": 0.21269975999985036,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/book2",
+      "raw_bytes": 610856,
+      "selected_mode": 6,
+      "selected_payload_bytes": 200211,
+      "direct_zlib_bytes": 206664,
+      "encode_seconds": 16.78429614100014,
+      "decode_seconds": 0.1812319259997821,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/geo",
+      "raw_bytes": 102400,
+      "selected_mode": 5,
+      "selected_payload_bytes": 63791,
+      "direct_zlib_bytes": 68433,
+      "encode_seconds": 1.4741446279999764,
+      "decode_seconds": 0.015298699000140914,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/news",
+      "raw_bytes": 377109,
+      "selected_mode": 6,
+      "selected_payload_bytes": 142057,
+      "direct_zlib_bytes": 144800,
+      "encode_seconds": 11.932530418999704,
+      "decode_seconds": 0.11102562799987936,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/obj1",
+      "raw_bytes": 21504,
+      "selected_mode": 1,
+      "selected_payload_bytes": 10317,
+      "direct_zlib_bytes": 10317,
+      "encode_seconds": 0.24111793000020043,
+      "decode_seconds": 0.00032154500013348297,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/obj2",
+      "raw_bytes": 246814,
+      "selected_mode": 1,
+      "selected_payload_bytes": 81505,
+      "direct_zlib_bytes": 81505,
+      "encode_seconds": 2.9291703210001288,
+      "decode_seconds": 0.0013196519998928125,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/paper1",
+      "raw_bytes": 53161,
+      "selected_mode": 6,
+      "selected_payload_bytes": 18282,
+      "direct_zlib_bytes": 18558,
+      "encode_seconds": 1.5715580410001166,
+      "decode_seconds": 0.014600615000290418,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/paper2",
+      "raw_bytes": 82199,
+      "selected_mode": 6,
+      "selected_payload_bytes": 29148,
+      "direct_zlib_bytes": 29760,
+      "encode_seconds": 2.1654833860002327,
+      "decode_seconds": 0.02121981899972525,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/pic",
+      "raw_bytes": 513216,
+      "selected_mode": 5,
+      "selected_payload_bytes": 53384,
+      "direct_zlib_bytes": 56465,
+      "encode_seconds": 2.6890533279997726,
+      "decode_seconds": 0.07305037399964931,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/progc",
+      "raw_bytes": 39611,
+      "selected_mode": 1,
+      "selected_payload_bytes": 13343,
+      "direct_zlib_bytes": 13343,
+      "encode_seconds": 1.2161534480001137,
+      "decode_seconds": 0.0003786920001402905,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/progl",
+      "raw_bytes": 71646,
+      "selected_mode": 6,
+      "selected_payload_bytes": 16178,
+      "direct_zlib_bytes": 16255,
+      "encode_seconds": 1.8058955920000699,
+      "decode_seconds": 0.020262956999886228,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/progp",
+      "raw_bytes": 49379,
+      "selected_mode": 6,
+      "selected_payload_bytes": 10850,
+      "direct_zlib_bytes": 11228,
+      "encode_seconds": 2.309733780999977,
+      "decode_seconds": 0.03499961599982271,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "calgary/trans",
+      "raw_bytes": 93695,
+      "selected_mode": 6,
+      "selected_payload_bytes": 18437,
+      "direct_zlib_bytes": 19045,
+      "encode_seconds": 2.4939344929998697,
+      "decode_seconds": 0.02590231500016671,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/alice29.txt",
+      "raw_bytes": 152089,
+      "selected_mode": 6,
+      "selected_payload_bytes": 52789,
+      "direct_zlib_bytes": 54404,
+      "encode_seconds": 4.059623735000059,
+      "decode_seconds": 0.048218254999937926,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/asyoulik.txt",
+      "raw_bytes": 125179,
+      "selected_mode": 6,
+      "selected_payload_bytes": 47454,
+      "direct_zlib_bytes": 48897,
+      "encode_seconds": 3.4476789939999435,
+      "decode_seconds": 0.03559152500019991,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/cp.html",
+      "raw_bytes": 24603,
+      "selected_mode": 6,
+      "selected_payload_bytes": 7819,
+      "direct_zlib_bytes": 7961,
+      "encode_seconds": 0.66887584899996,
+      "decode_seconds": 0.007059994999963237,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/fields.c",
+      "raw_bytes": 11150,
+      "selected_mode": 1,
+      "selected_payload_bytes": 3122,
+      "direct_zlib_bytes": 3122,
+      "encode_seconds": 0.30418598200003544,
+      "decode_seconds": 0.00016617499977655825,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/grammar.lsp",
+      "raw_bytes": 3721,
+      "selected_mode": 1,
+      "selected_payload_bytes": 1222,
+      "direct_zlib_bytes": 1222,
+      "encode_seconds": 0.08841711800005214,
+      "decode_seconds": 3.35820000145759e-05,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/kennedy.xls",
+      "raw_bytes": 1029744,
+      "selected_mode": 1,
+      "selected_payload_bytes": 203992,
+      "direct_zlib_bytes": 203992,
+      "encode_seconds": 7.897240163000333,
+      "decode_seconds": 0.003510305999952834,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/lcet10.txt",
+      "raw_bytes": 426754,
+      "selected_mode": 6,
+      "selected_payload_bytes": 138138,
+      "direct_zlib_bytes": 144904,
+      "encode_seconds": 12.04614747000005,
+      "decode_seconds": 0.12218435200020394,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/plrabn12.txt",
+      "raw_bytes": 481861,
+      "selected_mode": 6,
+      "selected_payload_bytes": 188389,
+      "direct_zlib_bytes": 195261,
+      "encode_seconds": 15.67474276699977,
+      "decode_seconds": 0.1528624980001041,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/ptt5",
+      "raw_bytes": 513216,
+      "selected_mode": 5,
+      "selected_payload_bytes": 53384,
+      "direct_zlib_bytes": 56465,
+      "encode_seconds": 4.13743933600017,
+      "decode_seconds": 0.07172270299997763,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/sum",
+      "raw_bytes": 38240,
+      "selected_mode": 1,
+      "selected_payload_bytes": 12990,
+      "direct_zlib_bytes": 12990,
+      "encode_seconds": 0.47159011799976724,
+      "decode_seconds": 0.00022055999988879194,
+      "exact_roundtrip": true
+    },
+    {
+      "path": "canterbury/xargs.1",
+      "raw_bytes": 4227,
+      "selected_mode": 1,
+      "selected_payload_bytes": 1736,
+      "direct_zlib_bytes": 1736,
+      "encode_seconds": 0.16549123599997984,
+      "decode_seconds": 3.78409999939322e-05,
+      "exact_roundtrip": true
+    }
+  ],
+  "matched_archives": [
+    {
+      "corpus": "canterbury",
+      "chunk_size": 32768,
+      "bytes": 771860,
+      "encode_seconds": 0.15977118199998586,
+      "decode_seconds": 0.019591141999626416,
+      "exact_roundtrip": true
+    },
+    {
+      "corpus": "calgary",
+      "chunk_size": 32768,
+      "bytes": 1109463,
+      "encode_seconds": 0.1785289880003802,
+      "decode_seconds": 0.04253566200031855,
+      "exact_roundtrip": true
+    }
+  ],
+  "grammar_max_merges": 32,
+  "repeats": 1
+}

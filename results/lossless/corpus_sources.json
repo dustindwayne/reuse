@@ -1,0 +1,156 @@
+{
+  "repository": "pfalcon/canterbury-corpus",
+  "tree": "c380ef9dc1dc62691757fdfeebdc2f85710e1e46",
+  "files": [
+    {
+      "path": "calgary/bib",
+      "bytes": 111261,
+      "sha256": "0f1a13936e358191533aca4a32ff42906d1b7f641f3afb0a90458b2410419fcf",
+      "git_blob": "2f5af24150f6c0d8f8bb22554f557be22ca15e7f"
+    },
+    {
+      "path": "calgary/book1",
+      "bytes": 768771,
+      "sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+      "git_blob": "f3b64ba86f78fec5561a2e139860cf7b2b366e2e"
+    },
+    {
+      "path": "calgary/book2",
+      "bytes": 610856,
+      "sha256": "c8538730cf2ce6a243acf3eb299c43d619b5c695d892f4884df796c13081fdf8",
+      "git_blob": "89f4204bdde72fa7f982940a2c88543a222019ec"
+    },
+    {
+      "path": "calgary/geo",
+      "bytes": 102400,
+      "sha256": "913ff6f45610599020c02f543a0d5a1f46cf772412e25a568b683d23db8c447d",
+      "git_blob": "6ea45500a26ce35678e2d45d9ddc56b146c1163b"
+    },
+    {
+      "path": "calgary/news",
+      "bytes": 377109,
+      "sha256": "7f0482f9774681429eb7021050c17966f6acf19450e170de6611e1ed953d42e8",
+      "git_blob": "df56febe31336759d186cb4cddf6c45667754ad0"
+    },
+    {
+      "path": "calgary/obj1",
+      "bytes": 21504,
+      "sha256": "8c06109caffd7e794516e4ed10095b0238ea8df63ed66840907cd4dd23e2cf72",
+      "git_blob": "454f21c3f85ce329b2a68c4a38ce5595b309318a"
+    },
+    {
+      "path": "calgary/obj2",
+      "bytes": 246814,
+      "sha256": "8b3e7f028bfefaebdd48a791060a1ab11d1ffd9bf27e0d63b15e58dda0deb984",
+      "git_blob": "7d011bd16853b2c403596a9c590396fa489c5e69"
+    },
+    {
+      "path": "calgary/paper1",
+      "bytes": 53161,
+      "sha256": "8d9c42d9fa58b5bce1a8b5fae3cc27c9eb7cc7a032bc12a633d44e816497e143",
+      "git_blob": "4214815305eb8bc56500811fa30f6cf0e96c5ae7"
+    },
+    {
+      "path": "calgary/paper2",
+      "bytes": 82199,
+      "sha256": "dc4b9cf68094c632a920f4e76d0a0a8b9617b624c36928ca46a5d29798c5bbbe",
+      "git_blob": "79ecc0942a12dcf5bb6c4ad8e6963d6326b4c42c"
+    },
+    {
+      "path": "calgary/pic",
+      "bytes": 513216,
+      "sha256": "0ec3a75089bb52342813496b17e51377bc9eba3cb519a444d67025354841d650",
+      "git_blob": "bdd7f3658f31d349d57bab0f79ec144e86d54dba"
+    },
+    {
+      "path": "calgary/progc",
+      "bytes": 39611,
+      "sha256": "151377a9d6aa9b7e872000269707a15e2b038c826340628e6f4d8b4db9ec3c19",
+      "git_blob": "5657d079f44d38fb63948351967f940a0c5f6828"
+    },
+    {
+      "path": "calgary/progl",
+      "bytes": 71646,
+      "sha256": "9388db0cfb71ffbe5687d381819a5ff69cdd992d6931e0cf81a310a1caed0ba0",
+      "git_blob": "b9ae885fad5c867612f0cdc65c4a71a93fd46950"
+    },
+    {
+      "path": "calgary/progp",
+      "bytes": 49379,
+      "sha256": "d0cd70ab5f7381a8584b25fa73b3608571a17ee1042cc5c546f63b904614d1bc",
+      "git_blob": "1f03c6dd5dc204cdcf60f67720b86c2317009511"
+    },
+    {
+      "path": "calgary/trans",
+      "bytes": 93695,
+      "sha256": "117a00c6af3e1c57f20013a8f1b468158f70634f685a348bedb7e4069cdd576a",
+      "git_blob": "146f653f48d188853930a35ee24271d03c9d4d10"
+    },
+    {
+      "path": "canterbury/alice29.txt",
+      "bytes": 152089,
+      "sha256": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0",
+      "git_blob": "703365523b944b721362a0fdf7a8255b313e9dd6"
+    },
+    {
+      "path": "canterbury/asyoulik.txt",
+      "bytes": 125179,
+      "sha256": "eaa3526fe53859f34ecdf255712f9ecf0b2c903451d4755b2edaa2e2599cb0fc",
+      "git_blob": "88dc7b60fe2afeeedd1ba1bb5d4229b17b29b041"
+    },
+    {
+      "path": "canterbury/cp.html",
+      "bytes": 24603,
+      "sha256": "e0cd21cef5b6c4069461e949be100080c3ce887de6f1dd8626c480528efaaf61",
+      "git_blob": "1d0ca37eb97cfd01aba1df2451c89de7988b45cc"
+    },
+    {
+      "path": "canterbury/fields.c",
+      "bytes": 11150,
+      "sha256": "85d73e354cc50cec76cb5a50537cf8dc035f8cbb8480f9e1cbe2f7d6c23393c7",
+      "git_blob": "63cdc030a1ff12ce26e2d878976462a91f2ba505"
+    },
+    {
+      "path": "canterbury/grammar.lsp",
+      "bytes": 3721,
+      "sha256": "1b0805dfc0ae706b35aac2bb4e15f02485efd24dda5dbd29de7b2f84d1a88c15",
+      "git_blob": "c60a993889ada422db0a5c76a1a475a301b75ecb"
+    },
+    {
+      "path": "canterbury/kennedy.xls",
+      "bytes": 1029744,
+      "sha256": "9af47239ca29dfe20e633f80bbbb9a4cc9783d0803d7b2b5626f42e4c3790420",
+      "git_blob": "9a851154254d2902e51ed9da28966a7f13c58ff6"
+    },
+    {
+      "path": "canterbury/lcet10.txt",
+      "bytes": 426754,
+      "sha256": "5314ba1dbb03f471df88bec6cd120a938ef60d0fd3511c5c1dce61bf7463245f",
+      "git_blob": "25dda6b3f1bf96b34f94531fd845d4e1a248cdfb"
+    },
+    {
+      "path": "canterbury/plrabn12.txt",
+      "bytes": 481861,
+      "sha256": "07e2e0b461af78c7c647cb53dab39de560198e16f799b4516eccf0fbd69f764c",
+      "git_blob": "34088b82cd029bcd3b6b0d1adc956f95734699a9"
+    },
+    {
+      "path": "canterbury/ptt5",
+      "bytes": 513216,
+      "sha256": "0ec3a75089bb52342813496b17e51377bc9eba3cb519a444d67025354841d650",
+      "git_blob": "bdd7f3658f31d349d57bab0f79ec144e86d54dba"
+    },
+    {
+      "path": "canterbury/sum",
+      "bytes": 38240,
+      "sha256": "ee5733cd76ecc2f9d8ff156adc3c02a7a851051dcf43a2d56ff4ee4ff606bdb3",
+      "git_blob": "758fd815aa4b2269804ca8a218397cc46e0aed01"
+    },
+    {
+      "path": "canterbury/xargs.1",
+      "bytes": 4227,
+      "sha256": "c58aeb5d2d1e12751d47e7412b45784405fc30a5671b03d480fa05776e183619",
+      "git_blob": "a9f39a731163d97cd035518530164715ffac258c"
+    }
+  ]
+}

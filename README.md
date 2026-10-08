@@ -19,6 +19,10 @@ The [grid experiment](docs/GRID.md) groups bytes into rectangular blocks and sto
 
 The [adaptive experiment](docs/ADAPTIVE.md) selects window sizes by actual encoded cost and can extract a repeated value into a bitmap before compressing the remainder. It reconstructs exactly and keeps whole objects raw when compression loses. Run `python scripts/benchmark_adaptive.py`; measured comparisons isolate splitting and extraction.
 
+## Real-corpus evaluation
+
+[Complete Canterbury and Calgary tests](docs/CORPUS_EVALUATION.md): 25 full files, 5.95 MB, exact reconstruction throughout. Whole-file transforms followed by zlib reduce payload totals by about 2.7% against direct zlib. The current chunked archive still loses to ZIP and the Python candidate search is much slower than direct compression. Per-file baselines, matched controls, chunk sensitivity and reproduction scripts are included.
+
 ## Earlier lossy experiment
 
 The sections below describe the earlier implementation and its historical measurements. It did not implement the lossless shared representation or residual-only neural prediction.

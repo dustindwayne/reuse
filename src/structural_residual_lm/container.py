@@ -28,7 +28,7 @@ def restore(mode,payload):
     raise ValueError('Unknown codec')
 
 
-def pack(files,chunk_size=4096):
+def pack(files,chunk_size=4096,selector=select):
     if chunk_size<=0: raise ValueError('Invalid chunk size')
     chunks=[]; originals=[]; seen={}; entries=[]
     for name,raw in files.items():
@@ -37,7 +37,7 @@ def pack(files,chunk_size=4096):
             chunk=raw[i:i+chunk_size]
             digest=hashlib.sha256(chunk).digest()
             if digest not in seen:
-                mode,payload=select(chunk)
+                mode,payload=selector(chunk)
                 seen[digest]=len(chunks)
                 chunks.append((digest,len(chunk),mode,payload)); originals.append(chunk)
             else:

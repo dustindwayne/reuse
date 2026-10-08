@@ -22,3 +22,11 @@ class ContainerTests(unittest.TestCase):
         raw=bytes(range(16))*64+bytes([255])*300
         for mode,transformed in ((5,encode(raw)),(6,Grammar.build(raw).dumps()),(7,grid(raw))):
             self.assertEqual(restore(mode,zlib.compress(transformed)),raw)
+
+    def test_matched_selector(self):
+        raw=bytes(range(256))*20
+        blob=pack({'a':raw,'b':raw},chunk_size=1024,selector=lambda data:(0,data))
+        files,stats=unpack(blob,True)
+        self.assertEqual(files,{'a':raw,'b':raw})
+        self.assertEqual(stats['unique_chunks'],1)
+        self.assertEqual(stats['total_references'],10)
