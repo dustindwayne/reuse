@@ -49,7 +49,7 @@ Full measurements: [per-input candidates](../results/lossless/recovered_folding.
 ## Run
 
 ```bash
-python scripts/container.py pack --auto example.udf data/train.txt data/validation.txt
+python scripts/container.py pack --auto example.udf archive/language-model/data/train.txt archive/language-model/data/validation.txt
 python scripts/container.py unpack example.udf restored
 python scripts/download_corpora.py /tmp/corpus-bench
 python scripts/download_fold_models.py /tmp/corpus-bench/models

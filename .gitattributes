@@ -7,3 +7,6 @@ results/lossless/corpus_sources.json text eol=crlf
 # Generated measurements and archived session evidence retain original bytes.
 results/lossless/gpu*.json -text whitespace=cr-at-eol
 results/lossless/gpu_lifecycle_frozen_sessions/** -text whitespace=cr-at-eol
+
+# Archived language-model sources retain their recorded Windows bytes.
+archive/language-model/src/**/*.py text eol=crlf

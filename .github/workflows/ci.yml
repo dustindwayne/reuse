@@ -10,7 +10,18 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -e .
       - run: python -m unittest discover -s tests -v
-      - run: python scripts/prepare_data.py
-      - run: python scripts/benchmark.py --config configs/baseline.yaml
-      - run: python scripts/benchmark.py --config configs/structural.yaml
-      - run: python scripts/benchmark.py --config configs/residual.yaml
+      - run: python scripts/verify_gpu_integration.py
+  historical-language-model:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: archive/language-model
+    env:
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-reproduce.txt
+      - run: python -m unittest discover -s tests -v

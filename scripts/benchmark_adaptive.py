@@ -6,7 +6,7 @@ rng=random.Random(19)
 cases={'alternating_extremes':bytes([0,255])*32768,
 'changing_ranges':bytes(rng.randrange(16)+(240 if (i//256)%2 else 0) for i in range(65536)),
 'frequent_outlier':bytes(255 if rng.random()<.65 else rng.randrange(120,128) for _ in range(65536)),
-'constant':b's'*65536,'random':rng.randbytes(65536),'synthetic_text':Path('data/train.txt').read_bytes()}
+'constant':b's'*65536,'random':rng.randbytes(65536),'synthetic_text':Path('archive/language-model/data/train.txt').read_bytes()}
 rows=[]
 for name,raw in cases.items():
     trials=[]

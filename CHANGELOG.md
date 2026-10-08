@@ -2,6 +2,10 @@
 
 ## 2026-10-08
 
+- Isolate the earlier language-model source, scripts, configs, smoke data, tests, and results under `archive/language-model/`; retain the evidence trail.
+- Split CI into active and historical test jobs, update package metadata to reuse, and resolve moved source paths when checking the original GPU freeze manifest.
+- Keep current root architecture/results focused on complete-data storage and computation reuse.
+
 - Add exact chunk-level persistent GPU reuse, verified chunk lookup, contiguous group packing and identity-gather bypass.
 - Preserve complete local raw measurements, earlier negative results and three independent frozen lifecycle sessions.
 - Make complete cold-plus-update lifecycle elapsed time the primary GPU metric: two-edit gains are unstable; four/eight constructed edits improve across three sessions.

@@ -20,10 +20,10 @@ Sharing gives a demonstrated benefit in the constructed cross-file duplication c
 
 ```bash
 python scripts/benchmark_container.py
-python scripts/container.py pack example.udf data/train.txt data/validation.txt
+python scripts/container.py pack example.udf archive/language-model/data/train.txt archive/language-model/data/validation.txt
 python scripts/container.py unpack example.udf restored
-cmp data/train.txt restored/train.txt
-cmp data/validation.txt restored/validation.txt
+cmp archive/language-model/data/train.txt restored/train.txt
+cmp archive/language-model/data/validation.txt restored/validation.txt
 ```
 
 Packing refuses an existing output file. Extraction requires a new output directory and rejects unsafe paths. Contents and references are checked before writing files. This is a prototype format for locally generated archives; resource limits for hostile compressed archives are not implemented.

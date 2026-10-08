@@ -8,7 +8,7 @@ cases={'your_grid_decimal':bytes([1,11,2,20,0,22,33,21]),
        'constant':b's'*65536,
        'clustered':bytes(rng.randrange(120,136) for _ in range(65536)),
        'smooth_grid':bytes((x//8+y//8)%256 for y in range(256) for x in range(256)),
-       'random':rng.randbytes(65536),'synthetic_text':Path('data/train.txt').read_bytes()}
+       'random':rng.randbytes(65536),'synthetic_text':Path('archive/language-model/data/train.txt').read_bytes()}
 rows=[]
 for name,raw in cases.items():
     shapes=[(4,2,2)] if name.startswith('your_grid') else [(64,2,2),(64,8,8),(256,16,16),(256,32,32)]

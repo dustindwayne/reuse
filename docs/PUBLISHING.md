@@ -1,6 +1,6 @@
 # Private GitHub repository
 
-The complete project is available at [dustindwayne/structural-residual-lm](https://github.com/dustindwayne/structural-residual-lm). The repository is private.
+The complete project is available at [dustindwayne/reuse](https://github.com/dustindwayne/reuse). The repository is private.
 
 All 14 development snapshots were imported in order after the repository bootstrap commit, including code, documentation, benchmark summaries and synthetic per-example CSV logs. Every imported snapshot was verified against its original Git tree SHA. The final imported tree is `9e9d48a19ebd9dd8bcb7b00a4094d9e39b569ccd`.
 

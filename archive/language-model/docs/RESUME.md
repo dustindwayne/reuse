@@ -1,6 +1,6 @@
 # Historical resume description
 
-This describes the earlier language-model experiment, not the current lossless framework. See [current evidence](GPU_LIFECYCLE.md) and the [experiment trail](EXPERIMENT_TRAIL.md).
+This describes the earlier language-model experiment, not the current lossless framework. See [current evidence](../../../docs/GPU_LIFECYCLE.md) and the [experiment trail](../../../docs/EXPERIMENT_TRAIL.md).
 
 **Structural Residual Language Model — Independent Research Prototype**
 

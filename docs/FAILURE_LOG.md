@@ -16,7 +16,7 @@ Conditional blocks skip substantial row work, but end-to-end structural predicti
 
 ### Evidence
 
-[RESULTS.md](../RESULTS.md) records both timing boundaries. The initial neural-only record remains in Git history, before the timing correction commit.
+[RESULTS.md](../archive/language-model/RESULTS.md) records both timing boundaries. The initial neural-only record remains in Git history, before the timing correction commit.
 
 ### Diagnosis
 

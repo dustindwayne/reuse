@@ -3,7 +3,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from structural_residual_lm.container import pack,unpack
 rng=random.Random(19);shared=rng.randbytes(16384)
-scenarios={'mixed':{'text.txt':Path('data/train.txt').read_bytes(),'pattern.bin':bytes([0,255])*8192,
+scenarios={'mixed':{'text.txt':Path('archive/language-model/data/train.txt').read_bytes(),'pattern.bin':bytes([0,255])*8192,
                    'values.bin':bytes(255 if rng.random()<.65 else rng.randrange(120,128) for _ in range(16384)),'random.bin':rng.randbytes(16384)},
 'shared_files':{'first.bin':shared*4,'second.bin':shared*3,'third.bin':shared+bytes([127])*4096},
 'unique_random':{'random.bin':rng.randbytes(65536)}}

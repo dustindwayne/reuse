@@ -19,9 +19,9 @@ All three inputs reconstruct byte for byte. Short or irregular inputs can grow. 
 
 ```bash
 python scripts/benchmark_lossless.py
-python scripts/lossless.py pack data/train.txt train.lsg
+python scripts/lossless.py pack archive/language-model/data/train.txt train.lsg
 python scripts/lossless.py unpack train.lsg restored.txt
-cmp data/train.txt restored.txt
+cmp archive/language-model/data/train.txt restored.txt
 ```
 
 The reader rejects forward/cyclic references, invalid roots and malformed/truncated encodings. Tests include arbitrary bytes, Unicode, large repetition, deterministic output and exact reconstructed lengths. Run `python -m unittest discover -s tests -v` (19 tests).

@@ -17,6 +17,6 @@ def measure(name, raw):
 
 if __name__=='__main__':
     rows=[measure('mixed_exact_text','S s\t café\r\n𐍈 s!'.encode()),
-          measure('synthetic_train',Path('data/train.txt').read_bytes())]
+          measure('synthetic_train',Path('archive/language-model/data/train.txt').read_bytes())]
     Path('results/lossless/benchmark.json').write_text(json.dumps(rows,indent=2)+'\n')
     print(json.dumps(rows,indent=2))

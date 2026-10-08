@@ -14,8 +14,11 @@ sys.path.insert(0,str(ROOT/'src'))
 def verify_evidence():
     archive=ROOT/'results/lossless/gpu_lifecycle_frozen_sessions'
     manifest=json.loads((archive/'frozen_manifest.json').read_text())
+    path_map=json.loads((ROOT/'archive/path-map.json').read_text())
     for path,expected in manifest.items():
-        if hashlib.sha256((ROOT/path.replace('\\','/')).read_bytes()).hexdigest()!=expected:
+        original=path.replace('\\','/')
+        source=ROOT/path_map.get(original,original)
+        if hashlib.sha256(source.read_bytes()).hexdigest()!=expected:
             raise ValueError('Frozen source differs: '+path)
     pairs=0
     for session in (1,2,3):

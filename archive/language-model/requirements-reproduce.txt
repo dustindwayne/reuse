@@ -1,0 +1,3 @@
+# Recorded CPU runtime uses Python 3.12.14
+numpy==2.3.5
+PyYAML==6.0.3

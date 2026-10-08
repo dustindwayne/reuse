@@ -23,7 +23,7 @@ Exact reconstruction passes for all three sets. Encoding takes about 16 seconds 
 ## Run
 
 ```bash
-python scripts/container.py pack --patterns example.ptf data/train.txt data/validation.txt
+python scripts/container.py pack --patterns example.ptf archive/language-model/data/train.txt archive/language-model/data/validation.txt
 python scripts/container.py unpack example.ptf restored
 python scripts/benchmark_patterns.py /tmp/corpus-bench
 ```

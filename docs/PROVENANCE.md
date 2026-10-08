@@ -39,4 +39,4 @@ Historical classifier report: global macro F1 0.9072, active size 7.6796 MB, inf
 
 The continuation states tile parity passed at 0.0 max error but later generation had `hit_RAM=0`, `hit_VRAM=0`; underlying logs were not retrieved. This is a reported failure, not proof of cache reuse or successful full-model paging.
 
-New experiment records and their scope will be documented in [RESULTS.md](../RESULTS.md).
+New experiment records and their scope will be documented in [RESULTS.md](../archive/language-model/RESULTS.md).

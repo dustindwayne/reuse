@@ -1,5 +1,5 @@
 ![Reuse — Store it once. Don’t compute it twice.](header.png)
-##
+
 Reduce complete processing time by storing repeated data once and reusing computation where its inputs and operation match. Preserve every input byte and every required output. Smaller storage, fewer computed blocks and lower VRAM are separate measurements from elapsed-time improvement.
 
 ## About this work
@@ -18,7 +18,7 @@ The committed [frozen local lifecycle measurements](docs/GPU_LIFECYCLE.md) on an
 
 All 252 measured lifecycle pairs preserved byte-exact reconstruction and bitwise-equal full outputs. Timing includes cold construction, all processing and output return, verification, and teardown. The workload is block-local FFT over full real corpus files with constructed edits; it does not establish general neural inference or electricity savings.
 
-**Integration status:** the tested 49-test implementation, complete raw measurements, three frozen session logs and source-freeze manifest are integrated. The repository remains private. See the [current report](docs/GPU_LIFECYCLE.md) and [implementation/reproduction guide](docs/GPU_COMPUTE.md).
+**Integration status:** the tested implementation (49 tests before the archive split), complete raw measurements, three frozen session logs and source-freeze manifest are integrated. The repository remains private. See the [current report](docs/GPU_LIFECYCLE.md) and [implementation/reproduction guide](docs/GPU_COMPUTE.md).
 
 ## GPU verification and reproduction
 
@@ -63,3 +63,7 @@ python scripts/benchmark_fast.py /path/to/corpora
 [Experiment trail](docs/EXPERIMENT_TRAIL.md) links earlier representations, failed approaches, baseline corrections and historical language-model work. Earlier reports are archived rather than presented as current findings. [Validation](docs/VALIDATION.md) separates checked-in tests from reported local tests.
 
 MIT licensed. Historical ideas belong to Dustin; implementation assistance and source limits are documented in [provenance](docs/PROVENANCE.md).
+
+## Repository layout
+
+`src/`, `scripts/`, and `tests/` contain the active lossless storage and CPU/GPU reuse paths. The earlier language-model code, training scripts, configs, smoke data, tests, and results are isolated in [archive/language-model](archive/language-model/README.md). It is historical evidence, not the current framework. The Python import namespace remains `structural_residual_lm` for compatibility.

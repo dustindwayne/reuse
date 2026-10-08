@@ -11,17 +11,18 @@ A compact encoder represents recurring orthographic features. A train-only conte
 
 ## Architecture
 
-The system combines a fixed-context neural LM with a deterministic prior. The adaptive configuration uses the observed token's surprise to select zero, one or two optional blocks. See [architecture](../../ARCHITECTURE.md) for the causal indexing, equations and parameter differences.
+The system combines a fixed-context neural LM with a deterministic prior. The adaptive configuration uses the observed token's surprise to select zero, one or two optional blocks. See [architecture](../../archive/language-model/ARCHITECTURE.md) for the causal indexing, equations and parameter differences.
 
 ## Historical result
 
-The prototype skips optional neural block work while keeping similar loss on a synthetic grammar smoke corpus. **It does not demonstrate an end-to-end speedup:** structural feature extraction dominates this small model. Three-seed comparisons and randomized controls are in [results](../../RESULTS.md); full metrics and per-example gate components are committed.
+The prototype skips optional neural block work while keeping similar loss on a synthetic grammar smoke corpus. **It does not demonstrate an end-to-end speedup:** structural feature extraction dominates this small model. Three-seed comparisons and randomized controls are in [results](../../archive/language-model/RESULTS.md); full metrics and per-example gate components are committed.
 
 ## Reproduce
 
 Python 3.10+ on Linux; no model downloads, account, API key or GPU required. Process memory measurement currently uses Unix `resource`.
 
 ```bash
+cd archive/language-model
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
@@ -34,18 +35,18 @@ python scripts/predict.py --text "the frog"
 python scripts/run_ablations.py --seeds 7,11,23
 ```
 
-To use a local natural-text corpus, run `python scripts/prepare_data.py --input corpus.txt`. Each nonempty line is a document; identical lines are deduplicated before the seeded split. This replaces smoke data, so record its license, identity and resulting hashes before sharing. Configuration paths are relative to the repository root.
+To use a local natural-text corpus, run `python scripts/prepare_data.py --input corpus.txt`. Each nonempty line is a document; identical lines are deduplicated before the seeded split. This replaces smoke data, so record its license, identity and resulting hashes before sharing. Run the commands below from `archive/language-model/`; configuration paths are relative to that directory.
 
 Benchmarks save JSON metrics, a feature/gate CSV for structural systems and local checkpoints under ignored `results/checkpoints`. `predict.py` prints top next-token probabilities from a trained checkpoint; it verifies corpus hashes for the deterministic prior. Results include the actual configuration, seed, dataset hashes, Git commit, environment, timing repeats and parameter count.
 
 ## Evidence and limits
 
-- [Measured results and ablations](../../RESULTS.md)
-- [Mechanism and reasoning](../../ARCHITECTURE.md)
+- [Measured results and ablations](../../archive/language-model/RESULTS.md)
+- [Mechanism and reasoning](../../archive/language-model/ARCHITECTURE.md)
 - [Provenance and attribution](../PROVENANCE.md)
-- [Experiment design](../EXPERIMENTS.md)
+- [Experiment design](../../archive/language-model/docs/EXPERIMENTS.md)
 - [Failures and corrections](../FAILURE_LOG.md)
-- [Resume description](../RESUME.md)
+- [Resume description](../../archive/language-model/docs/RESUME.md)
 - [Validation and remaining checks](../VALIDATION.md)
 
 This is a small fixed-context feed-forward model and designed grammar dataset. It does not establish Transformer scaling, novel-vocabulary generalization, semantic reasoning, full-model paging or production savings. Structural configurations add feature-projection parameters. Skipped block work is not total FLOPs or wall-time reduction. Three seeds and small loss differences do not establish statistical superiority. The confidence/surprise formula and thresholds are experimental choices, not calibrated measures of difficulty.
