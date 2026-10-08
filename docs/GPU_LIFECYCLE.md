@@ -1,84 +1,65 @@
-# Complete GPU cache lifecycle elapsed time
+# GPU lifecycle elapsed time: frozen repeatability results
 
-Primary metric: complete elapsed time from cold construction through every edit,
-including cache teardown. GPU: RTX 5070 Ti, Torch 2.11.0+cu128, CUDA 12.8.
-The operation remains one float32 rFFT per required zero-padded block, width 2048,
-batch cap 1024. No extra FFT work was introduced.
+**Current evidence:** supplied desktop measurements show repeatable complete lifecycle savings with four and eight constructed edits. One edit loses in all sessions; two edits is unreliable. Four edits is the earliest tested consistently favorable point, not a guaranteed threshold. Complete elapsed time is the primary metric.
 
-## Existing 21 paired sequences
+Provenance: measured on the local desktop on 2026-10-08. The tested optimized source, raw JSON, all three session logs/metadata and the freeze manifest are now integrated. The [earlier GPU prototype](archive/GPU_PROTOTYPE.md) remains historical; it predates these optimizations.
 
-For each matching sequence index in `gpu_chunk_cache.json`, sum cold + insertion
-+ replacement for dense and cache separately, then calculate statistics across
-those 21 sequence totals. Phase medians were not summed.
+## Frozen experiment
 
-| Dense median total | Cache median total | Median paired saving | Cache wins |
-| ---: | ---: | ---: | ---: |
-| 46.9038 ms | 48.0330 ms | -0.3065 ms | 9 / 21 |
+RTX 5070 Ti, PyTorch 2.11.0+cu128, CUDA 12.8. All 25 pinned Canterbury/Calgary files, 5,952,406 original bytes. One float32 block-local rFFT per required zero-padded block, width 2048 and batch cap 1024. No artificial extra FFT work was introduced.
 
-These totals use the existing individual call timers; they cannot retrospectively
-include inter-call or final cache teardown costs absent from the original timers.
-Full per-sequence totals: `results/lossless/gpu_existing_lifecycle.json`.
+SHA-256 hashes froze the implementation and benchmark dependency sources. Three separate fresh Python processes ran sequentially, with every frozen hash verified unchanged before and after each session. No tuning occurred. Each edit-count experiment used one warmup pair and 21 alternating paired lifecycles, each starting a fresh cache.
 
-## Planning and construction changes
+Odd cumulative steps insert a constructed record at one-third of every current file. Even steps replace 17 bytes at two-thirds with an edit record. Every step processes every complete current file. These are constructed edits of real corpus files, not recorded editing histories.
 
-Cache chunk references are now built once and reused as a tuple on subsequent
-hits. Newly required input rows are packed with contiguous NumPy copies per
-chunk instead of a Python/NumPy copy for every block. Batch packing locates the
-first intersecting chunk by binary search, preserves partial groups and exact
-tail padding, and uses the existing reusable staging buffer. SHA256 file integrity
-checks, chunk hashes and verified exact equality remain in place.
+Each total is directly timed from cold construction through all updates and cache teardown. Positive median paired savings mean cache finished faster. The separate medians and median paired difference are distinct statistics.
 
-These implementation changes target preparation cost. This experiment compares
-the changed cache to the optimized dense baseline; it does not isolate their
-before/after speedup. Planning remains substantial: in the eight-edit experiment,
-cold planning was 9.34 ms and update planning medians were 7.94–8.45 ms. Additional
-planning overhead reduction is still needed; no planning speedup is claimed.
+| Session | Edits after cold start | Dense median ms | Cache median ms | Median paired saving ms | Cache wins |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 1 | 1 | 32.6213 | 34.6489 | -2.1901 | 1/21 |
+| 1 | 2 | 48.8761 | 47.7493 | 1.4325 | 14/21 |
+| 1 | 4 | 82.7855 | 79.9958 | 2.5173 | 14/21 |
+| 1 | 8 | 147.2796 | 139.4761 | 6.6586 | 20/21 |
+| 2 | 1 | 33.9635 | 37.2252 | -2.7931 | 2/21 |
+| 2 | 2 | 49.7365 | 49.0145 | -0.3735 | 9/21 |
+| 2 | 4 | 83.3930 | 82.8291 | 1.7285 | 14/21 |
+| 2 | 8 | 149.0526 | 140.6361 | 7.9156 | 20/21 |
+| 3 | 1 | 34.5671 | 35.9317 | -0.6030 | 8/21 |
+| 3 | 2 | 51.9948 | 51.2801 | 0.0063 | 12/21 |
+| 3 | 4 | 85.5402 | 83.0873 | 2.1370 | 18/21 |
+| 3 | 8 | 150.2181 | 144.2128 | 9.4338 | 19/21 |
 
-## New complete lifecycle measurement
+The initial lifecycle report's two-edit startup recovery conclusion is superseded. Session 2 loses on the paired two-edit comparison, and session 3 is effectively tied. Four edits has positive median paired savings and majority wins in every session. Eight edits gives the strongest repeated advantage. No confidence interval or universal edit-count threshold is claimed.
 
-All 25 original pinned Canterbury/Calgary files (5,952,406 bytes) are processed
-first. Each edit modifies all 25 complete files and is cumulative. Odd-numbered
-steps insert `\nconstructed lifecycle insertion N\n` at one-third of each current
-file. Even-numbered steps replace 17 bytes at two-thirds with `edit-NN-record`.
-These are constructed test edits, not recorded editing histories.
+## Timing and exactness
 
-Each edit-count experiment uses one warmup pair followed by 21 measured pairs.
-Every pair starts a fresh cache. Dense and cache run complete independent
-lifecycles in alternating order. Each reported total is measured directly across
-all calls and teardown; none is a sum of phase medians.
+The complete timer includes construction, preparation, chunk lookup and exact equality, file hashes, packing, H2D transfers, unchanged FFT, GPU output/cache maintenance, full D2H outputs, reconstruction, integrity checks, additional original-byte comparison and teardown. Synchronization brackets the lifecycle and each call. Full host outputs from every version are retained for independent comparison.
 
-| Constructed edits after cold start | Dense median lifecycle | Cache median lifecycle | Median paired saving | Cache wins |
-| ---: | ---: | ---: | ---: | ---: |
-| 1 | 33.5610 ms | 36.5212 ms | -2.6569 ms | 2 / 21 |
-| 2 | 49.6199 ms | 48.8760 ms | 0.9376 ms | 14 / 21 |
-| 4 | 84.1073 ms | 81.5887 ms | 2.4128 ms | 17 / 21 |
-| 8 | 152.6047 ms | 147.6919 ms | 5.1617 ms | 18 / 21 |
+Source disk reads, synthetic edit generation, pre-pair garbage collection and independent dense/cache full-output comparisons are outside timing. Each source file's SHA-256 is verified during loading; each reconstructed file's integrity is checked on every call.
 
-Startup cost is recovered at the first tested point of two constructed edits,
-judged by positive median paired savings and a majority of cache wins. This is
-a workload-dependent measurement, not a guaranteed threshold. At eight edits,
-the difference of median lifecycle totals is about 3.22%; median paired saving
-is a distinct statistic. At two edits the margin and win rate remain modest.
+All **252 measured lifecycle pairs / 1,197 full version comparisons** passed byte-exact reconstruction and bitwise full-output equality. The integrated implementation passes 49 unit tests, including batches bisecting chunk groups, dirty staging buffers, exact tail padding, collision rejection, integrity verification and configuration invalidation. The historical prototype had 45 tests; these counts refer to different stages.
 
-Complete timing includes cache construction, planning and lookup, hashing and
-exact equality, packing, H2D, unchanged FFT, GPU output append/gather, every full
-D2H result, full reconstruction and SHA256 verification, additional original-byte
-comparison, and cache teardown. Synchronization brackets the lifecycle and each
-call. Disk reads, constructed edit generation, pre-pair garbage collection and
-independent dense/cache full-output comparisons are outside the measured timer.
-Full host outputs from every version are retained until independently compared.
-Every measured version matched bitwise and reconstructed exactly.
+## Integrated implementation and reproduction
 
-All 49 tests pass. Verification includes transfer batches that bisect chunk groups,
-reuse of dirty staging arrays, exact tail padding, collision rejection, integrity
-checks and cache configuration invalidation. Cache capacity remains unbounded.
+The local cache hashes each content chunk once, confirms byte equality, and reuses an ordered range of GPU block outputs. Chunk references are built once and reused as tuples. Newly required input rows use contiguous NumPy copies per chunk; binary search locates the first intersecting chunk for a transfer batch. Padding, block offsets and output ordering match dense processing. Kernel identity or width changes invalidate lookup and GPU outputs together. Cache capacity is unbounded and input buffers must remain immutable.
 
-Run:
+The integrated sources include `src/structural_residual_lm/gpu_reuse.py`,
+`scripts/benchmark_gpu.py`, `scripts/benchmark_chunk_gpu.py`,
+`scripts/benchmark_gpu_lifecycle.py`, `scripts/repeat_gpu_lifecycle.py`, and
+`tests/test_gpu_reuse.py`. The source hashes still match the recorded freeze.
+The [verification and reproduction guide](GPU_COMPUTE.md) provides commands.
+Use a new archive directory when repeating sessions so recorded evidence remains
+unchanged. The Windows helper now uses the complete lifecycle experiment.
 
-```powershell
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_gpu_lifecycle.py --existing-only
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_gpu_lifecycle.py data/corpora --repeats 21
-```
+Raw JSON, logs, timestamps and the original source-freeze manifest are checked in
+under `results/lossless/gpu_lifecycle_frozen_sessions/`. Earlier measurements
+remain in `gpu_existing_lifecycle.json` and `gpu_lifecycle.json`.
+The [initial local lifecycle report](archive/GPU_LIFECYCLE_LOCAL_INITIAL.md)
+is retained verbatim; its two-edit recovery conclusion was corrected by these
+three repeat sessions. No raw files were fabricated from report tables.
 
-All lifecycle runs and secondary phase timings:
-`results/lossless/gpu_lifecycle.json`.
+## Scope and next checks
+
+Supported scope: complete elapsed-time improvement for repeated constructed edits, on this hardware, using block-local FFT and exact reuse. This is not evidence of general neural inference acceleration or electricity savings. Unchanged-file, low-reuse and bounded-capacity behavior remain to be evaluated. The repo stays private; source/raw-data integration does not authorize public release.
+
+[Experiment trail](EXPERIMENT_TRAIL.md) preserves unsuccessful paths and corrected conclusions.

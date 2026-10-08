@@ -8,4 +8,4 @@ GitHub recreated commit identifiers and timestamps. [IMPORT_MAP.json](IMPORT_MAP
 
 The repository includes a GitHub Actions workflow that installs dependencies in a fresh hosted runner, executes unit tests, regenerates the corpus and runs all three benchmark configurations. See [VALIDATION.md](VALIDATION.md) for observed checks.
 
-Before public publication, verify original chat quotations and historical dates against primary records. Keeping this experimental project private does not establish those claims.
+Current status: the tested GPU chunk cache, raw session records and source-freeze manifest are integrated with the [frozen GPU lifecycle reports](GPU_LIFECYCLE.md). Four/eight constructed edits show repeated scoped elapsed-time gains; two edits remain unreliable. Keep the repository private pending review of the scoped claim. Historical quotations and dates must remain explicitly sourced; they are not evidence for current performance. Integration does not authorize public release.
