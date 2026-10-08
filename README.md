@@ -10,6 +10,10 @@ python scripts/lossless.py pack data/train.txt train.lsg
 python scripts/lossless.py unpack train.lsg restored.txt
 ```
 
+## Grid average experiment
+
+The [grid experiment](docs/GRID.md) groups bytes into rectangular blocks and stores an integer average plus exact bit-packed offsets, choosing raw blocks when smaller. It saves space on clustered values and reconstructs exactly; random bytes and text do not benefit in these tests. Run `python scripts/benchmark_grid.py`.
+
 ## Earlier lossy experiment
 
 The sections below describe the earlier implementation and its historical measurements. It did not implement the lossless shared representation or residual-only neural prediction.

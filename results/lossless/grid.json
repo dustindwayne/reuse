@@ -1,0 +1,248 @@
+[
+  {
+    "name": "your_grid_decimal",
+    "raw_bytes": 8,
+    "zlib_bytes": 16,
+    "best_adaptive_bytes": 34,
+    "sha256": "29611abe3db3678dbf08e849798edf8bd26b0e6112847b7c1f8ae362561d77f8",
+    "exact_roundtrip": true,
+    "trials": [
+      {
+        "width": 4,
+        "block_width": 2,
+        "block_height": 2,
+        "average_bytes": 36,
+        "adaptive_bytes": 34,
+        "two_encodes_seconds": 6.0335999933158746e-05
+      }
+    ]
+  },
+  {
+    "name": "your_grid_hex",
+    "raw_bytes": 8,
+    "zlib_bytes": 16,
+    "best_adaptive_bytes": 34,
+    "sha256": "04eca08152d544305b11b08c02645edfc3d64a05e6734881eee52cbcccce32b8",
+    "exact_roundtrip": true,
+    "trials": [
+      {
+        "width": 4,
+        "block_width": 2,
+        "block_height": 2,
+        "average_bytes": 36,
+        "adaptive_bytes": 34,
+        "two_encodes_seconds": 2.647899987096025e-05
+      }
+    ]
+  },
+  {
+    "name": "constant",
+    "raw_bytes": 65536,
+    "zlib_bytes": 85,
+    "best_adaptive_bytes": 216,
+    "sha256": "e4916bd20ed29191e46063f402ec709e1a8ca9151dcedab878b75485fd90f16d",
+    "exact_roundtrip": true,
+    "trials": [
+      {
+        "width": 64,
+        "block_width": 2,
+        "block_height": 2,
+        "average_bytes": 49176,
+        "adaptive_bytes": 49176,
+        "two_encodes_seconds": 0.13615143100014393
+      },
+      {
+        "width": 64,
+        "block_width": 8,
+        "block_height": 8,
+        "average_bytes": 3096,
+        "adaptive_bytes": 3096,
+        "two_encodes_seconds": 0.03825094700005138
+      },
+      {
+        "width": 256,
+        "block_width": 16,
+        "block_height": 16,
+        "average_bytes": 792,
+        "adaptive_bytes": 792,
+        "two_encodes_seconds": 0.03164167999989331
+      },
+      {
+        "width": 256,
+        "block_width": 32,
+        "block_height": 32,
+        "average_bytes": 216,
+        "adaptive_bytes": 216,
+        "two_encodes_seconds": 0.03276124700005312
+      }
+    ]
+  },
+  {
+    "name": "clustered",
+    "raw_bytes": 65536,
+    "zlib_bytes": 37878,
+    "best_adaptive_bytes": 41176,
+    "sha256": "0fdc500ccb7d1ef52ab7bb36327c0327cf6d7c1ac0cc9a44e216e08e537783eb",
+    "exact_roundtrip": true,
+    "trials": [
+      {
+        "width": 64,
+        "block_width": 2,
+        "block_height": 2,
+        "average_bytes": 84036,
+        "adaptive_bytes": 81731,
+        "two_encodes_seconds": 0.11009941399993295
+      },
+      {
+        "width": 64,
+        "block_width": 8,
+        "block_height": 8,
+        "average_bytes": 42448,
+        "adaptive_bytes": 42448,
+        "two_encodes_seconds": 0.07811922199994115
+      },
+      {
+        "width": 256,
+        "block_width": 16,
+        "block_height": 16,
+        "average_bytes": 41464,
+        "adaptive_bytes": 41464,
+        "two_encodes_seconds": 0.17303400700006932
+      },
+      {
+        "width": 256,
+        "block_width": 32,
+        "block_height": 32,
+        "average_bytes": 41176,
+        "adaptive_bytes": 41176,
+        "two_encodes_seconds": 0.048403301999996984
+      }
+    ]
+  },
+  {
+    "name": "smooth_grid",
+    "raw_bytes": 65536,
+    "zlib_bytes": 441,
+    "best_adaptive_bytes": 17176,
+    "sha256": "1b35328a6c4a2d95acbcd66a183e3f9d8a542ada63fb33fff58295444f1231aa",
+    "exact_roundtrip": true,
+    "trials": [
+      {
+        "width": 64,
+        "block_width": 2,
+        "block_height": 2,
+        "average_bytes": 81944,
+        "adaptive_bytes": 81944,
+        "two_encodes_seconds": 0.294326792999982
+      },
+      {
+        "width": 64,
+        "block_width": 8,
+        "block_height": 8,
+        "average_bytes": 44056,
+        "adaptive_bytes": 44056,
+        "two_encodes_seconds": 0.052025778999905015
+      },
+      {
+        "width": 256,
+        "block_width": 16,
+        "block_height": 16,
+        "average_bytes": 17176,
+        "adaptive_bytes": 17176,
+        "two_encodes_seconds": 0.0366100449998612
+      },
+      {
+        "width": 256,
+        "block_width": 32,
+        "block_height": 32,
+        "average_bytes": 24792,
+        "adaptive_bytes": 24792,
+        "two_encodes_seconds": 0.03181834099996195
+      }
+    ]
+  },
+  {
+    "name": "random",
+    "raw_bytes": 65536,
+    "zlib_bytes": 65562,
+    "best_adaptive_bytes": 65624,
+    "sha256": "8dcb48963b70f7ff963999a02ca3abec6f2bf3b2b5d9673691ecd7b4f3200266",
+    "exact_roundtrip": true,
+    "trials": [
+      {
+        "width": 64,
+        "block_width": 2,
+        "block_height": 2,
+        "average_bytes": 115947,
+        "adaptive_bytes": 81943,
+        "two_encodes_seconds": 0.15168775500001175
+      },
+      {
+        "width": 64,
+        "block_width": 8,
+        "block_height": 8,
+        "average_bytes": 74360,
+        "adaptive_bytes": 66584,
+        "two_encodes_seconds": 0.06049808199986728
+      },
+      {
+        "width": 256,
+        "block_width": 16,
+        "block_height": 16,
+        "average_bytes": 72792,
+        "adaptive_bytes": 65816,
+        "two_encodes_seconds": 0.06077158299990515
+      },
+      {
+        "width": 256,
+        "block_width": 32,
+        "block_height": 32,
+        "average_bytes": 72792,
+        "adaptive_bytes": 65624,
+        "two_encodes_seconds": 0.05839075500011859
+      }
+    ]
+  },
+  {
+    "name": "synthetic_text",
+    "raw_bytes": 112445,
+    "zlib_bytes": 9357,
+    "best_adaptive_bytes": 112581,
+    "sha256": "2f29bf0867b49e90a646c7d1645a20ebe9364ebb8f48648446874cf2925f87c7",
+    "exact_roundtrip": true,
+    "trials": [
+      {
+        "width": 64,
+        "block_width": 2,
+        "block_height": 2,
+        "average_bytes": 182843,
+        "adaptive_bytes": 140543,
+        "two_encodes_seconds": 0.20719161300007727
+      },
+      {
+        "width": 64,
+        "block_width": 8,
+        "block_height": 8,
+        "average_bytes": 115643,
+        "adaptive_bytes": 112651,
+        "two_encodes_seconds": 0.07493178999993688
+      },
+      {
+        "width": 256,
+        "block_width": 16,
+        "block_height": 16,
+        "average_bytes": 113813,
+        "adaptive_bytes": 112917,
+        "two_encodes_seconds": 0.07502311999996891
+      },
+      {
+        "width": 256,
+        "block_width": 32,
+        "block_height": 32,
+        "average_bytes": 112805,
+        "adaptive_bytes": 112581,
+        "two_encodes_seconds": 0.0810239019999699
+      }
+    ]
+  }
+]
