@@ -40,5 +40,5 @@ Every measured full output matched bitwise and all bytes reconstructed exactly. 
 Reproduce with the corresponding **local modified implementation**, not the older checked-in runner:
 
 ```powershell
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_gpu.py data/corpora --repeats 21 --output results/lossless/gpu_optimized.json
+python scripts/benchmark_gpu.py data/corpora --repeats 21 --output results/lossless/gpu_optimized.json
 ```

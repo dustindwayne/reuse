@@ -160,27 +160,39 @@ class BlockGPUCache:
         plan.index = self.index
         if isinstance(plan, ChunkBlockPlan):
             plan.chunks = self.chunks
-        plan.add('current', files)
-        planning = time.perf_counter()-planning_start
-        missing = MissingChunkPlan(plan, first) if isinstance(plan, ChunkBlockPlan) else BlockPlan(width=width, reuse=False)
-        if not isinstance(plan, ChunkBlockPlan):
-            missing.blocks = self.blocks[first:]
-            missing.refs = list(range(len(missing.blocks)))
-        with torch.inference_mode():
-            if missing.blocks:
-                new = execute_torch(missing, kernel, self.device, self.batch_blocks, events)
-                self.outputs = new if self.outputs is None else torch.cat((self.outputs, new))
-            if self.outputs is None:
-                raise ValueError('GPU cache requires nonempty input')
-            identity = len(plan.refs) == len(self.blocks) and all(i == ref for i, ref in enumerate(plan.refs))
-            output = self.outputs if identity else self.outputs.index_select(
-                0, torch.tensor(plan.refs, dtype=torch.int64, device=self.device))
-            host = output.cpu().numpy()
-        restored = plan.reconstruct()['current']
-        return host, restored, dict(new_blocks=len(missing.blocks), output_blocks=len(plan.refs),
-                                    cached_blocks=len(self.blocks),planning_lookup_s=planning,
-                                    chunk_lookup_s=getattr(plan,'lookup_s',0),
-                                    new_chunks=len(self.chunks)-first_chunk)
+        outputs = self.outputs
+        try:
+            plan.add('current', files)
+            planning = time.perf_counter()-planning_start
+            missing = MissingChunkPlan(plan, first) if isinstance(plan, ChunkBlockPlan) else BlockPlan(width=width, reuse=False)
+            if not isinstance(plan, ChunkBlockPlan):
+                missing.blocks = self.blocks[first:]
+                missing.refs = list(range(len(missing.blocks)))
+            with torch.inference_mode():
+                if missing.blocks:
+                    new = execute_torch(missing, kernel, self.device, self.batch_blocks, events)
+                    outputs = new if outputs is None else torch.cat((outputs, new))
+                if outputs is None:
+                    raise ValueError('GPU cache requires nonempty input')
+                identity = len(plan.refs) == len(self.blocks) and all(i == ref for i, ref in enumerate(plan.refs))
+                output = outputs if identity else outputs.index_select(
+                    0, torch.tensor(plan.refs, dtype=torch.int64, device=self.device))
+                host = output.cpu().numpy()
+            restored = plan.reconstruct()['current']
+            self.outputs = outputs
+            return host, restored, dict(new_blocks=len(missing.blocks), output_blocks=len(plan.refs),
+                                        cached_blocks=len(self.blocks),planning_lookup_s=planning,
+                                        chunk_lookup_s=getattr(plan,'lookup_s',0),
+                                        new_chunks=len(self.chunks)-first_chunk)
+        except BaseException:
+            # Appended definitions cannot outlive a failed output transaction.
+            threshold = first_chunk if isinstance(plan, ChunkBlockPlan) else first
+            for digest, node in list(self.index.items()):
+                if node >= threshold:
+                    del self.index[digest]
+            del self.blocks[first:]
+            del self.chunks[first_chunk:]
+            raise
 
 
 class ChunkBlockPlan(BlockPlan):

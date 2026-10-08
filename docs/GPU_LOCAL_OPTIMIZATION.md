@@ -47,7 +47,7 @@ on every run. All 46 unit tests passed, including cache configuration invalidati
 Reproduce:
 
 ```powershell
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_gpu.py data/corpora --repeats 21 --output results/lossless/gpu_optimized.json
+python scripts/benchmark_gpu.py data/corpora --repeats 21 --output results/lossless/gpu_optimized.json
 ```
 
 Complete elapsed times include planning, packing, transfers, kernel execution,

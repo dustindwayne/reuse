@@ -37,7 +37,7 @@ def verify_evidence():
             if not row['full_outputs_bitwise_equal'] or not row['full_inputs_byte_exact']:
                 raise ValueError('Recorded exactness gate failed')
             pairs+=len(runs)
-    print(f'Freeze source hashes and all {pairs} recorded lifecycle pairs verified.')
+    print(f'Historical measured-source hashes and all {pairs} recorded lifecycle pairs verified.')
 
 
 def main():

@@ -76,8 +76,8 @@ checks and cache configuration invalidation. Cache capacity remains unbounded.
 Run:
 
 ```powershell
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_gpu_lifecycle.py --existing-only
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_gpu_lifecycle.py data/corpora --repeats 21
+python scripts/benchmark_gpu_lifecycle.py --existing-only
+python scripts/benchmark_gpu_lifecycle.py data/corpora --repeats 21
 ```
 
 All lifecycle runs and secondary phase timings:

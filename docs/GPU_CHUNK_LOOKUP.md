@@ -69,8 +69,8 @@ edits and block-local FFT, with no energy measurement. Cold reuse remains slower
 Reproduce from the repository root:
 
 ```powershell
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_chunk_gpu.py data/corpora --profile-only
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_chunk_gpu.py data/corpora
+python scripts/benchmark_chunk_gpu.py data/corpora --profile-only
+python scripts/benchmark_chunk_gpu.py data/corpora
 ```
 
 Full measurements: `results/lossless/gpu_chunk_cache.json`.

@@ -162,5 +162,7 @@
   "ARCHITECTURE.md": "archive/language-model/ARCHITECTURE.md",
   "RESULTS.md": "archive/language-model/RESULTS.md",
   "docs/EXPERIMENTS.md": "archive/language-model/docs/EXPERIMENTS.md",
-  "docs/RESUME.md": "archive/language-model/docs/RESUME.md"
+  "docs/RESUME.md": "archive/language-model/docs/RESUME.md",
+  "src/structural_residual_lm/gpu_reuse.py": "archive/measured-gpu/src/structural_residual_lm/gpu_reuse.py",
+  "src/structural_residual_lm/adaptive.py": "archive/measured-gpu/src/structural_residual_lm/adaptive.py"
 }

@@ -37,7 +37,7 @@ The complete timer includes construction, preparation, chunk lookup and exact eq
 
 Source disk reads, synthetic edit generation, pre-pair garbage collection and independent dense/cache full-output comparisons are outside timing. Each source file's SHA-256 is verified during loading; each reconstructed file's integrity is checked on every call.
 
-All **252 measured lifecycle pairs / 1,197 full version comparisons** passed byte-exact reconstruction and bitwise full-output equality. The integrated implementation passes 49 unit tests, including batches bisecting chunk groups, dirty staging buffers, exact tail padding, collision rejection, integrity verification and configuration invalidation. The historical prototype had 45 tests; these counts refer to different stages.
+All **252 measured lifecycle pairs / 1,197 full version comparisons** passed byte-exact reconstruction and bitwise full-output equality. The measured implementation passed 49 unit tests before the archive split, including batches bisecting chunk groups, dirty staging buffers, exact tail padding, collision rejection, integrity verification and configuration invalidation. The historical prototype had 45 tests; these counts refer to different stages.
 
 ## Integrated implementation and reproduction
 
@@ -63,3 +63,11 @@ three repeat sessions. No raw files were fabricated from report tables.
 Supported scope: complete elapsed-time improvement for repeated constructed edits, on this hardware, using block-local FFT and exact reuse. This is not evidence of general neural inference acceleration or electricity savings. Unchanged-file, low-reuse and bounded-capacity behavior remain to be evaluated. The repo stays private; source/raw-data integration does not authorize public release.
 
 [Experiment trail](EXPERIMENT_TRAIL.md) preserves unsuccessful paths and corrected conclusions.
+
+## Baseline and repeatability limits
+
+Dense and cache paths share content boundaries and identical block offsets/padding. Equality is against this matched-layout dense baseline, not a fixed-width whole-file grid. The three sessions were separate processes on the same GPU and machine, run sequentially; they are not independent hardware replications. Serial correlation, clock and thermal variation are not ruled out. No confidence interval or universal break-even threshold is established.
+
+Current cache transaction and adaptive-window fixes postdate these timings. Original measured source bytes remain in `archive/measured-gpu/` and are resolved by `archive/path-map.json` for historical hash verification. Checking those hashes validates recorded-source preservation, not the current implementation's performance. CI verifies recorded evidence consistency; it does not rerun CUDA measurements.
+
+The cache retains complete source buffers through views, copied chunks, and GPU outputs without eviction. Appending outputs copies the resident tensor. Width-2048 float32 rFFT produces 8,200 output bytes per full 2,048-byte input block before other allocations. This lifecycle evidence contains no current peak-VRAM measurement; it does not establish a VRAM reduction.

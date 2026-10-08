@@ -59,4 +59,4 @@ assert loads(encoded)["edited"]["data.bin"] == edited_bytes
 
 The encoder keeps original distinct chunks in memory for exact duplicate confirmation. This prototype is an in-memory batch/incremental store, not yet a disk-backed cache or a bounded-memory streaming system. Timings do not establish electricity savings, faster neural inference or a universal improvement for every data distribution. They establish reduced CPU time for full lossless data processing on the measured complete-file workloads. Different boundary rules and repetition rates can change the outcome.
 
-Validation: the complete test suite passes (41 tests), including shifted-insertion reuse, exact version reconstruction, bounded coverage and corruption rejection. A CLI pack/unpack check independently restores two full directory versions and empty files exactly.
+Validation at this historical stage: the complete test suite passed (41 tests before the archive split), including shifted-insertion reuse, exact version reconstruction, bounded coverage and corruption rejection. A CLI pack/unpack check independently restores two full directory versions and empty files exactly.

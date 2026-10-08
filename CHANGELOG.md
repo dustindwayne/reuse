@@ -2,6 +2,10 @@
 
 ## 2026-10-08
 
+- Roll back appended cache definitions on failed processing and publish outputs only after reconstruction succeeds; add failure/retry regression coverage.
+- Reject adaptive windows larger than 65,534 bytes and require setuptools 77 for SPDX license metadata.
+- Preserve original measured sources, scrub personal machine paths from docs/session metadata, and correct current CI/test/baseline descriptions.
+
 - Remove unsupported conversation quotations, origin timelines, source-recovery pointers, and reported historical results without committed evidence.
 
 - Isolate the earlier language-model source, scripts, configs, smoke data, tests, and results under `archive/language-model/`; retain the evidence trail.

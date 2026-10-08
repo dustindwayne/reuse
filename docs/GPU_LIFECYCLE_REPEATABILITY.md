@@ -55,9 +55,9 @@ input loading, and reconstructed-file integrity is checked on every call.
 Commands used in separate processes:
 
 ```powershell
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/repeat_gpu_lifecycle.py 1
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/repeat_gpu_lifecycle.py 2
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/repeat_gpu_lifecycle.py 3
+python scripts/repeat_gpu_lifecycle.py 1
+python scripts/repeat_gpu_lifecycle.py 2
+python scripts/repeat_gpu_lifecycle.py 3
 ```
 
 The wrapper refuses to overwrite existing session files, launches the unchanged

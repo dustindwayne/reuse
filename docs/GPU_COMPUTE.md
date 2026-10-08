@@ -81,3 +81,5 @@ and conclusions describe their earlier stages; use current commands above for
 integrated reproduction. The freeze manifest covers benchmark sources, not
 later README/helper/verification edits. Git attributes pin source line endings
 to retain the recorded hashes on clean Windows and Linux checkouts.
+
+Source fixes after the recorded sessions are not GPU-timed. The verifier resolves original measured sources through `archive/path-map.json`; this is historical evidence verification, not proof that current source hashes match the measured implementation. Use a new archive directory for any future runs.

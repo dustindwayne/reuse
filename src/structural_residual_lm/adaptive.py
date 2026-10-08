@@ -37,7 +37,7 @@ def block(raw, extract=True):
 
 
 def encode(raw, dynamic=True, extract=True, max_window=1024):
-    if not 1<=max_window<=65535: raise ValueError('Invalid maximum window')
+    if not 1<=max_window<=65534: raise ValueError('Invalid maximum window')
     def visit(part):
         whole=block(part,extract)
         encoded=struct.pack('<HH',len(part),len(whole))+whole

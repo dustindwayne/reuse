@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,6 +9,9 @@ description = "Experimental lossless shared storage and exact computation reuse.
 requires-python = ">=3.10"
 dependencies = ["numpy>=2.0,<3"]
 license = "MIT"
+
+[project.optional-dependencies]
+gpu = ["torch>=2.11"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

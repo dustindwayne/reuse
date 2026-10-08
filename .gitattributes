@@ -10,3 +10,4 @@ results/lossless/gpu_lifecycle_frozen_sessions/** -text whitespace=cr-at-eol
 
 # Archived language-model sources retain their recorded Windows bytes.
 archive/language-model/src/**/*.py text eol=crlf
+archive/measured-gpu/src/**/*.py text eol=crlf

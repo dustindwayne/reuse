@@ -54,8 +54,8 @@ As a diagnostic only, summing phase medians gives 46.9668 ms dense and 47.3648 m
 Reproduce from the repository root with the **local modified implementation**; this script is not yet checked in:
 
 ```powershell
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_chunk_gpu.py data/corpora --profile-only
-& 'C:\Users\ddwan\anaconda3\envs\torch5070\python.exe' scripts/benchmark_chunk_gpu.py data/corpora
+python scripts/benchmark_chunk_gpu.py data/corpora --profile-only
+python scripts/benchmark_chunk_gpu.py data/corpora
 ```
 
 Local raw measurements: `results/lossless/gpu_chunk_cache.json` (not included in this documentation commit).
