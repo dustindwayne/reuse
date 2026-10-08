@@ -1,4 +1,5 @@
-# Shared Data Representation
+# reuse
+## Store it once. Don’t compute it twice.
 
 Reduce complete processing time by storing repeated data once and reusing computation where its inputs and operation match. Preserve every input byte and every required output. Smaller storage, fewer computed blocks and lower VRAM are separate measurements from elapsed-time improvement.
 
