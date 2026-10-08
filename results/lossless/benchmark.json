@@ -1,19 +1,5 @@
 [
   {
-    "name": "s_950000",
-    "input_bytes": 950000,
-    "grammar_bytes": 58,
-    "zlib_bytes": 944,
-    "unique_byte_definitions": 1,
-    "pair_definitions": 18,
-    "root_references": 14,
-    "definition_analysis_visits": 19,
-    "build_seconds": 1.9665490629999454,
-    "decode_seconds": 0.31180397399998583,
-    "sha256": "8891c69517eaf8a1365423e37bd4d096829f3306945bd3897af252875ab6774b",
-    "exact_roundtrip": true
-  },
-  {
     "name": "mixed_exact_text",
     "input_bytes": 19,
     "grammar_bytes": 42,

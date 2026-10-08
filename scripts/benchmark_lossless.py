@@ -16,7 +16,7 @@ def measure(name, raw):
                 sha256=hashlib.sha256(raw).hexdigest(),exact_roundtrip=True)
 
 if __name__=='__main__':
-    rows=[measure('s_950000',b's'*950000),measure('mixed_exact_text','S s\t café\r\n𐍈 s!'.encode()),
+    rows=[measure('mixed_exact_text','S s\t café\r\n𐍈 s!'.encode()),
           measure('synthetic_train',Path('data/train.txt').read_bytes())]
     Path('results/lossless/benchmark.json').write_text(json.dumps(rows,indent=2)+'\n')
     print(json.dumps(rows,indent=2))

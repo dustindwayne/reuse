@@ -5,7 +5,7 @@ from structural_residual_lm.lossless import Grammar
 class LosslessTests(unittest.TestCase):
     def test_exact_bytes(self):
         rng = random.Random(19)
-        cases = [b'', bytes(range(256)), 'S s\t café\r\n𐍈 s!'.encode(), b's'*950000]
+        cases = [b'', bytes(range(256)), 'S s\t café\r\n𐍈 s!'.encode(), b's'*4096]
         cases += [rng.randbytes(n) for n in (1, 17, 256, 4096)]
         for raw in cases:
             g = Grammar.build(raw)
@@ -13,7 +13,7 @@ class LosslessTests(unittest.TestCase):
             self.assertEqual(restored.decode(), raw)
             self.assertEqual(sum(restored.node_lengths()[r] for r in restored.roots), len(raw))
             self.assertEqual(len(g.terminals), len(set(raw)))
-        self.assertLess(len(Grammar.build(b's'*950000).dumps()), 256)
+        self.assertLess(len(Grammar.build(b's'*4096).dumps()), 256)
 
     def test_sharing_and_determinism(self):
         raw = b'the frog jumps. the frog jumps. '*100

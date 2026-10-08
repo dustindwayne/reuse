@@ -1,0 +1,56 @@
+[
+  {
+    "name": "mixed",
+    "raw_bytes": 161597,
+    "container_bytes": 41746,
+    "zip_bytes": 31575,
+    "encode_seconds": 5.305226427999969,
+    "decode_seconds": 0.0064083339998433075,
+    "exact_roundtrip": true,
+    "archive_sha256": "2835f2e831f8353f14aaa2bd33f8602d2b7347896c4f3e5913bec1997ec19d3c",
+    "unique_chunks": 37,
+    "total_references": 40,
+    "codec_counts": {
+      "1": 29,
+      "2": 4,
+      "0": 4
+    },
+    "payload_bytes": 39626,
+    "metadata_bytes": 2120
+  },
+  {
+    "name": "shared_files",
+    "raw_bytes": 135168,
+    "container_bytes": 17052,
+    "zip_bytes": 50212,
+    "encode_seconds": 0.5367556559999684,
+    "decode_seconds": 0.00023206700006994652,
+    "exact_roundtrip": true,
+    "archive_sha256": "86b991131c29594da984a1db69f8e4ac8431171b2b5a4a5eee82fa5f5f5b4b08",
+    "unique_chunks": 5,
+    "total_references": 33,
+    "codec_counts": {
+      "0": 4,
+      "1": 1
+    },
+    "payload_bytes": 16410,
+    "metadata_bytes": 642
+  },
+  {
+    "name": "unique_random",
+    "raw_bytes": 65536,
+    "container_bytes": 66363,
+    "zip_bytes": 65674,
+    "encode_seconds": 2.3056516009999086,
+    "decode_seconds": 0.00023685399992245948,
+    "exact_roundtrip": true,
+    "archive_sha256": "a4b2cef932b0f0da96650ee2e97793264cef9e9f6630dfb928ce858654c0accd",
+    "unique_chunks": 16,
+    "total_references": 16,
+    "codec_counts": {
+      "0": 16
+    },
+    "payload_bytes": 65536,
+    "metadata_bytes": 827
+  }
+]

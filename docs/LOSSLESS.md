@@ -10,11 +10,10 @@ Full serialized sizes include header, terminal definitions, pair definitions, an
 
 | Input | Raw bytes | Grammar bytes | zlib bytes | Terminal definitions | Pair definitions | Root references |
 |---|---:|---:|---:|---:|---:|---:|
-| 950,000 copies of `s` | 950,000 | 58 | 944 | 1 | 18 | 14 |
 | Mixed case, whitespace and Unicode | 19 | 42 | 27 | 16 | 0 | 19 |
 | Synthetic training corpus | 112,445 | 31,691 | 9,357 | 25 | 103 | 31,451 |
 
-All three inputs reconstruct byte for byte. Short or irregular inputs can grow. This greedy pair grammar does not find the globally smallest representation, and zlib compresses the synthetic corpus substantially better. The repeated-single-symbol example demonstrates sharing, not superiority on general text.
+All three inputs reconstruct byte for byte. Short or irregular inputs can grow. This greedy pair grammar does not find the globally smallest representation, and zlib compresses the synthetic corpus substantially better. 
 
 ## Run
 
