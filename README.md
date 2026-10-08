@@ -1,3 +1,5 @@
+![Reuse — Store it once. Don’t compute it twice.](header.png)
+
 # reuse
 ## Store it once. Don’t compute it twice.
 
