@@ -13,4 +13,8 @@ The checkout test used a new virtual environment with inherited, preinstalled Nu
 
 Hardware is captured in `results/hardware.json`. Timing and process RSS vary between runs; exact NLL reproduction does not make throughput deterministic. Git dirty flags in some experiment records reflect rewritten tracked results; the recorded implementation commits identify the code used. Later corrections are documented and affected conditions rerun.
 
-Remaining checks before public publication: primary chat quotation/date verification, full isolated dependency installation, GitHub remote creation and remote CI execution. Local source and full development history are delivered in the archive; no private GitHub repository has yet been created.
+GitHub upload completed 2026-10-08: the private repository contains all 14 development snapshots and synthetic per-example CSV logs. Every snapshot tree matches the original local tree; commit identifiers are mapped in [IMPORT_MAP.json](IMPORT_MAP.json).
+
+[CI run 37721547238](https://github.com/dustindwayne/structural-residual-lm/actions/runs/37721547238) passed on a fresh GitHub-hosted Ubuntu runner using Python 3.12. It installed dependencies, passed the 16 unit tests, regenerated data and ran baseline, structural and residual benchmarks. Hosted dependency resolution therefore succeeds; this workflow does not assert bitwise loss reproduction across dependency versions or hardware. The imported final snapshot also triggers the same workflow; current status is available in [Actions](https://github.com/dustindwayne/structural-residual-lm/actions).
+
+Remaining check before public publication: primary chat quotation/date verification. The archive and Git bundle retain the original local development history.
