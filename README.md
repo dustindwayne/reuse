@@ -18,7 +18,7 @@ The committed [frozen local lifecycle measurements](docs/GPU_LIFECYCLE.md) on an
 
 All 252 measured lifecycle pairs preserved byte-exact reconstruction and bitwise-equal full outputs. Timing includes cold construction, all processing and output return, verification, and teardown. The workload is block-local FFT over full real corpus files with constructed edits; it does not establish general neural inference or electricity savings.
 
-**Source status:** robustness fixes after the recorded sessions have not been GPU-timed. Original measured sources are preserved separately. **Integration status:** the tested implementation (49 tests before the archive split), complete raw measurements, three frozen session logs and source-freeze manifest are integrated. The repository remains private. See the [current report](docs/GPU_LIFECYCLE.md) and [implementation/reproduction guide](docs/GPU_COMPUTE.md).
+**Source status:** the current robustness fixes passed all 36 active and 16 archived tests without skips, plus fixture and full-corpus CUDA exactness checks on the RTX 5070 Ti. See [local correctness review](docs/LOCAL_REVIEW_59cb8feb.md). They have not been GPU-timed; original measured sources are preserved separately. **Integration status:** the tested implementation (49 tests before the archive split), complete raw measurements, three frozen session logs and source-freeze manifest are integrated. The repository remains private. See the [current report](docs/GPU_LIFECYCLE.md) and [implementation/reproduction guide](docs/GPU_COMPUTE.md).
 
 ## GPU verification and reproduction
 

@@ -1,6 +1,10 @@
 # Validation
 
-## Current checked-in and local evidence
+## Local CUDA review of the current fixes
+
+The local runner checked commit `59cb8feb1c5222b02028c15c29ef7e7da5ac48ef`: all 36 active and 16 archived tests passed with no skips. Both fixture and full-corpus CUDA exactness checks passed nine versions on the RTX 5070 Ti. Historical measured-source hashes and all 252 recorded statistics verified. No new timing records were produced. Three checkout paths have a documented CRLF clean-filter issue despite matching committed physical bytes; this review does not claim a clean Git status. See [the local review](LOCAL_REVIEW_59cb8feb.md).
+
+## Earlier checks in this workspace
 
 Before the archive split, the integrated suite had 49 passing unit tests. The split passes locally: 36 active tests (three optional-Torch tests skipped here) and 16 historical language-model tests in a separate process. All original freeze hashes and recorded paired statistics still verify. Cache rollback and adaptive-window regression tests were added after the split. No GPU timing was rerun for these changes. All 252 paired complete GPU lifecycles and 1,197 bitwise-output / byte-exact reconstruction comparisons across three frozen sessions are preserved with the raw JSON, logs and source-freeze manifest. The verification command checks those hashes and recalculates recorded medians, paired savings and win counts. CUDA integration verification covers all nine existing constructed versions of the complete pinned corpora, without adding timing experiments. See [current GPU findings](GPU_LIFECYCLE.md) and [verification commands](GPU_COMPUTE.md). The earlier prototype's 45-test stage remains archived.
 
