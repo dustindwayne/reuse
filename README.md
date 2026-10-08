@@ -10,6 +10,10 @@ python scripts/fast_store.py unpack versions.fst restored
 python scripts/benchmark_fast.py /path/to/corpora
 ```
 
+## GPU computation reuse
+
+The [CUDA reuse path](docs/GPU_COMPUTE.md) computes distinct blocks once and gathers every full output. Its complete-data benchmark is ready for the desktop GPU; **no GPU speedup has been measured yet**. Public readiness remains pending actual GPU results.
+
 ## About this work
 
 I build these experiments because I want to understand how things work and whether they can work better. Curiosity and learning are the reason I keep going: ask a question, build something, test it, and change what the evidence says needs changing.
