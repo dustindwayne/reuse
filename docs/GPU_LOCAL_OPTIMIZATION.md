@@ -1,3 +1,5 @@
+> Historical block-cache stage. Superseded by the [current lifecycle findings](GPU_LIFECYCLE.md) and [frozen repeatability report](GPU_LIFECYCLE_REPEATABILITY.md). This report preserves the earlier negative results and baseline correction; its test count, commands and conclusions describe that stage. Use the [current GPU guide](GPU_COMPUTE.md) for the integrated implementation and reproduction instructions.
+
 # Local elapsed-time optimization
 
 Measured on RTX 5070 Ti with Torch 2.11.0+cu128, CUDA 12.8, width 2048,

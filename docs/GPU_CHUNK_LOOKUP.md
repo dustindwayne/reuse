@@ -1,3 +1,5 @@
+> Historical chunk-cache update stage. The update-only timings below do not establish complete lifecycle savings. Use the [current lifecycle findings](GPU_LIFECYCLE.md), [frozen repeatability report](GPU_LIFECYCLE_REPEATABILITY.md) and [GPU guide](GPU_COMPUTE.md) for the integrated implementation and current conclusions. One edit loses, two edits is unreliable, and four/eight edits are favorable across the three recorded sessions; no universal threshold is claimed.
+
 # Chunk lookup and complete elapsed time
 
 Hardware: RTX 5070 Ti, Torch 2.11.0+cu128, CUDA 12.8. Inputs: all 25 pinned
