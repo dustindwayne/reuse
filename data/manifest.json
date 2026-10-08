@@ -1,0 +1,10 @@
+{
+  "origin": "authored combinatorial grammar smoke corpus (MIT)",
+  "seed": 19,
+  "split": "80/20 unique documents; boundaries retained",
+  "documents": 3072,
+  "hashes": {
+    "train": "2f29bf0867b49e90a646c7d1645a20ebe9364ebb8f48648446874cf2925f87c7",
+    "validation": "962f59369df0613c03dd86d56c2f9ffd255b1746c4629395f2ab7d1c902fe267"
+  }
+}
