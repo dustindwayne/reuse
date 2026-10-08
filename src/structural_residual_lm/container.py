@@ -8,11 +8,16 @@ from .lossless import Grammar
 def select(raw):
     candidates=[(0,raw),(1,zlib.compress(raw)),(2,adaptive_encode(raw)),
                 (3,Grammar.build(raw,max_merges=32).dumps()),(4,grid_encode(raw))]
+    candidates += [(mode+3,zlib.compress(payload)) for mode,payload in candidates if mode in (2,3,4)]
     mode,payload=min(candidates,key=lambda x:len(x[1]))
     return mode,payload
 
 
 def restore(mode,payload):
+    if mode in (5,6,7):
+        try: transformed=zlib.decompress(payload)
+        except zlib.error as e: raise ValueError('Invalid compressed transform') from e
+        return restore(mode-3,transformed)
     if mode==0: return payload
     if mode==1:
         try: return zlib.decompress(payload)

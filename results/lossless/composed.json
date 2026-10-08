@@ -1,0 +1,142 @@
+[
+  {
+    "name": "changing_ranges",
+    "raw_bytes": 65536,
+    "direct_zlib_bytes": 41096,
+    "transforms": [
+      {
+        "name": "dynamic",
+        "transform_bytes": 41086,
+        "then_zlib_bytes": 38330,
+        "encode_seconds": 0.4159984400000667,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grid",
+        "transform_bytes": 66584,
+        "then_zlib_bytes": 42182,
+        "encode_seconds": 0.029400496000107523,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grammar",
+        "transform_bytes": 52948,
+        "then_zlib_bytes": 41317,
+        "encode_seconds": 3.69657600000005,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "frequent_outlier",
+    "raw_bytes": 65536,
+    "direct_zlib_bytes": 21582,
+    "transforms": [
+      {
+        "name": "dynamic",
+        "transform_bytes": 20316,
+        "then_zlib_bytes": 18955,
+        "encode_seconds": 0.32507348300009653,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grid",
+        "transform_bytes": 66584,
+        "then_zlib_bytes": 22724,
+        "encode_seconds": 0.045381787999986045,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grammar",
+        "transform_bytes": 21901,
+        "then_zlib_bytes": 17298,
+        "encode_seconds": 2.1501220110001213,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "alternating_extremes",
+    "raw_bytes": 65536,
+    "direct_zlib_bytes": 86,
+    "transforms": [
+      {
+        "name": "dynamic",
+        "transform_bytes": 8781,
+        "then_zlib_bytes": 79,
+        "encode_seconds": 0.4195865340000182,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grid",
+        "transform_bytes": 66584,
+        "then_zlib_bytes": 274,
+        "encode_seconds": 0.04047434400013117,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grammar",
+        "transform_bytes": 41,
+        "then_zlib_bytes": 47,
+        "encode_seconds": 0.05602372299995295,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "random",
+    "raw_bytes": 65536,
+    "direct_zlib_bytes": 65562,
+    "transforms": [
+      {
+        "name": "dynamic",
+        "transform_bytes": 65541,
+        "then_zlib_bytes": 65567,
+        "encode_seconds": 1.452736108999943,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grid",
+        "transform_bytes": 66584,
+        "then_zlib_bytes": 66579,
+        "encode_seconds": 0.02431130399986614,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grammar",
+        "transform_bytes": 98792,
+        "then_zlib_bytes": 80252,
+        "encode_seconds": 0.09500981599990155,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "synthetic_text",
+    "raw_bytes": 112445,
+    "direct_zlib_bytes": 9357,
+    "transforms": [
+      {
+        "name": "dynamic",
+        "transform_bytes": 108143,
+        "then_zlib_bytes": 18154,
+        "encode_seconds": 0.7991089829999964,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grid",
+        "transform_bytes": 112651,
+        "then_zlib_bytes": 40653,
+        "encode_seconds": 0.05244543200001317,
+        "exact_roundtrip": true
+      },
+      {
+        "name": "grammar",
+        "transform_bytes": 31691,
+        "then_zlib_bytes": 8178,
+        "encode_seconds": 3.5348043839999264,
+        "exact_roundtrip": true
+      }
+    ]
+  }
+]

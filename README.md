@@ -1,6 +1,6 @@
 # Shared Data Representation
 
-The [integrated data container](docs/CONTAINER.md) stores shared chunks once across files and chooses among raw storage, dynamic windows, repeated-value extraction, shared grammar, grid offsets and zlib by actual encoded size. It preserves exact file contents. Run `python scripts/benchmark_container.py`.
+The [integrated data container](docs/CONTAINER.md) stores shared chunks once across files and chooses among raw storage, dynamic windows, repeated-value extraction, shared grammar, grid offsets and zlib by actual encoded size. Structural transforms can also feed zlib; [composition measurements](docs/COMPOSED.md) record the results. It preserves exact file contents. Run `python scripts/benchmark_container.py`.
 
 Current direction: a **lossless shared representation** that stores distinct pieces once and preserves exact reconstruction. The new [lossless foundation](docs/LOSSLESS.md) implements shared byte and sequence definitions, a binary file format, exact decoding and measured storage comparisons.
 

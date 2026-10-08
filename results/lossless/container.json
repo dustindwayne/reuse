@@ -2,38 +2,38 @@
   {
     "name": "mixed",
     "raw_bytes": 161597,
-    "container_bytes": 41746,
+    "container_bytes": 41443,
     "zip_bytes": 31575,
-    "encode_seconds": 5.305226427999969,
-    "decode_seconds": 0.0064083339998433075,
+    "encode_seconds": 3.04514406300018,
+    "decode_seconds": 0.005269102999818642,
     "exact_roundtrip": true,
-    "archive_sha256": "2835f2e831f8353f14aaa2bd33f8602d2b7347896c4f3e5913bec1997ec19d3c",
+    "archive_sha256": "2fdb836395aa7d21fa0168906c2bf544aea9b56616483fc4c1c29169897fdfd3",
     "unique_chunks": 37,
     "total_references": 40,
     "codec_counts": {
       "1": 29,
-      "2": 4,
+      "6": 4,
       "0": 4
     },
-    "payload_bytes": 39626,
+    "payload_bytes": 39323,
     "metadata_bytes": 2120
   },
   {
     "name": "shared_files",
     "raw_bytes": 135168,
-    "container_bytes": 17052,
+    "container_bytes": 17050,
     "zip_bytes": 50212,
-    "encode_seconds": 0.5367556559999684,
-    "decode_seconds": 0.00023206700006994652,
+    "encode_seconds": 0.4009560079998664,
+    "decode_seconds": 0.002252433999956338,
     "exact_roundtrip": true,
-    "archive_sha256": "86b991131c29594da984a1db69f8e4ac8431171b2b5a4a5eee82fa5f5f5b4b08",
+    "archive_sha256": "1b554ee2285598b3145a41826d498136e42257e4f3d83bcec27c9cf3d4c86e64",
     "unique_chunks": 5,
     "total_references": 33,
     "codec_counts": {
       "0": 4,
-      "1": 1
+      "5": 1
     },
-    "payload_bytes": 16410,
+    "payload_bytes": 16408,
     "metadata_bytes": 642
   },
   {
@@ -41,8 +41,8 @@
     "raw_bytes": 65536,
     "container_bytes": 66363,
     "zip_bytes": 65674,
-    "encode_seconds": 2.3056516009999086,
-    "decode_seconds": 0.00023685399992245948,
+    "encode_seconds": 1.5137220840001646,
+    "decode_seconds": 0.00023219800004881108,
     "exact_roundtrip": true,
     "archive_sha256": "a4b2cef932b0f0da96650ee2e97793264cef9e9f6630dfb928ce858654c0accd",
     "unique_chunks": 16,
