@@ -1,0 +1,212 @@
+[
+  {
+    "name": "alternating_extremes",
+    "raw_bytes": 65536,
+    "zlib_bytes": 86,
+    "trials": [
+      {
+        "dynamic": false,
+        "extract": false,
+        "bytes": 65541,
+        "encode_seconds": 0.011520974999939426,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": false,
+        "bytes": 65541,
+        "encode_seconds": 0.10619752599995991,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": false,
+        "extract": true,
+        "bytes": 8781,
+        "encode_seconds": 0.027331793000030302,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": true,
+        "bytes": 8781,
+        "encode_seconds": 0.2524766520000412,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "changing_ranges",
+    "raw_bytes": 65536,
+    "zlib_bytes": 41096,
+    "trials": [
+      {
+        "dynamic": false,
+        "extract": false,
+        "bytes": 65541,
+        "encode_seconds": 0.010203778000004604,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": false,
+        "bytes": 42095,
+        "encode_seconds": 0.08843276099992181,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": false,
+        "extract": true,
+        "bytes": 65541,
+        "encode_seconds": 0.01966155499985689,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": true,
+        "bytes": 41086,
+        "encode_seconds": 0.30828218199985713,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "frequent_outlier",
+    "raw_bytes": 65536,
+    "zlib_bytes": 21582,
+    "trials": [
+      {
+        "dynamic": false,
+        "extract": false,
+        "bytes": 65541,
+        "encode_seconds": 0.009535412999866821,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": false,
+        "bytes": 65541,
+        "encode_seconds": 0.08928789000015058,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": false,
+        "extract": true,
+        "bytes": 20328,
+        "encode_seconds": 0.025329264999982115,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": true,
+        "bytes": 20316,
+        "encode_seconds": 0.4013987890000408,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "constant",
+    "raw_bytes": 65536,
+    "zlib_bytes": 85,
+    "trials": [
+      {
+        "dynamic": false,
+        "extract": false,
+        "bytes": 461,
+        "encode_seconds": 0.0056481329997950525,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": false,
+        "bytes": 461,
+        "encode_seconds": 0.05894141499993566,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": false,
+        "extract": true,
+        "bytes": 461,
+        "encode_seconds": 0.00796450999996523,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": true,
+        "bytes": 461,
+        "encode_seconds": 0.09010125800000424,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "random",
+    "raw_bytes": 65536,
+    "zlib_bytes": 65562,
+    "trials": [
+      {
+        "dynamic": false,
+        "extract": false,
+        "bytes": 65541,
+        "encode_seconds": 0.011393382999813184,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": false,
+        "bytes": 65541,
+        "encode_seconds": 0.09904784499985908,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": false,
+        "extract": true,
+        "bytes": 65541,
+        "encode_seconds": 0.35885705900000175,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": true,
+        "bytes": 65541,
+        "encode_seconds": 1.3866269950001424,
+        "exact_roundtrip": true
+      }
+    ]
+  },
+  {
+    "name": "synthetic_text",
+    "raw_bytes": 112445,
+    "zlib_bytes": 9357,
+    "trials": [
+      {
+        "dynamic": false,
+        "extract": false,
+        "bytes": 112450,
+        "encode_seconds": 0.01753573399992092,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": false,
+        "bytes": 112450,
+        "encode_seconds": 0.15990932600016095,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": false,
+        "extract": true,
+        "bytes": 108143,
+        "encode_seconds": 0.06160533000002033,
+        "exact_roundtrip": true
+      },
+      {
+        "dynamic": true,
+        "extract": true,
+        "bytes": 108143,
+        "encode_seconds": 0.7175490150000314,
+        "exact_roundtrip": true
+      }
+    ]
+  }
+]

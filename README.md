@@ -14,6 +14,10 @@ python scripts/lossless.py unpack train.lsg restored.txt
 
 The [grid experiment](docs/GRID.md) groups bytes into rectangular blocks and stores an integer average plus exact bit-packed offsets, choosing raw blocks when smaller. It saves space on clustered values and reconstructs exactly; random bytes and text do not benefit in these tests. Run `python scripts/benchmark_grid.py`.
 
+## Dynamic windows and repeated values
+
+The [adaptive experiment](docs/ADAPTIVE.md) selects window sizes by actual encoded cost and can extract a repeated value into a bitmap before compressing the remainder. It reconstructs exactly and keeps whole objects raw when compression loses. Run `python scripts/benchmark_adaptive.py`; measured comparisons isolate splitting and extraction.
+
 ## Earlier lossy experiment
 
 The sections below describe the earlier implementation and its historical measurements. It did not implement the lossless shared representation or residual-only neural prediction.

@@ -1,0 +1,19 @@
+import json,random,sys,time,zlib
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
+from structural_residual_lm.adaptive import encode,decode
+rng=random.Random(19)
+cases={'alternating_extremes':bytes([0,255])*32768,
+'changing_ranges':bytes(rng.randrange(16)+(240 if (i//256)%2 else 0) for i in range(65536)),
+'frequent_outlier':bytes(255 if rng.random()<.65 else rng.randrange(120,128) for _ in range(65536)),
+'constant':b's'*65536,'random':rng.randbytes(65536),'synthetic_text':Path('data/train.txt').read_bytes()}
+rows=[]
+for name,raw in cases.items():
+    trials=[]
+    for dynamic,extract in ((False,False),(True,False),(False,True),(True,True)):
+        t=time.perf_counter();packed=encode(raw,dynamic,extract);elapsed=time.perf_counter()-t
+        assert decode(packed)==raw
+        trials.append(dict(dynamic=dynamic,extract=extract,bytes=len(packed),encode_seconds=elapsed,exact_roundtrip=True))
+    rows.append(dict(name=name,raw_bytes=len(raw),zlib_bytes=len(zlib.compress(raw)),trials=trials))
+Path('results/lossless/adaptive.json').write_text(json.dumps(rows,indent=2)+'\n')
+print(json.dumps(rows,indent=2))
