@@ -4,7 +4,13 @@ Reduce complete processing time by storing repeated data once and reusing comput
 
 ## About this work
 
-I build these experiments because I want to understand how things work and whether they can work better. Curiosity and learning are the reason I keep going: ask a question, build something, test it, and change what the evidence says needs changing.
+My brain keeps telling me we could do this better. We keep adding more GPUs, and I keep wondering what we could get out of the hardware we already have with better ways of representing data.
+
+When different files contain the exact same bytes, why store those bytes again? Why not store them once and reference them? Then I wonder how far that could go. Could we carry those references into processing? Move less data? Reuse work? Get more capability while using less energy?
+
+Those questions keep leading to experiments, and those experiments keep leading to more questions. This is where I follow them.
+
+I don't need it work, I just want to know.
 
 ## Current GPU evidence
 
