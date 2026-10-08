@@ -12,7 +12,44 @@ python scripts/benchmark_fast.py /path/to/corpora
 
 ## GPU computation reuse
 
-The [CUDA reuse path](docs/GPU_COMPUTE.md) computes distinct blocks once and gathers every full output. Its complete-data benchmark is ready for the desktop GPU; **no GPU speedup has been measured yet**. Public readiness remains pending actual GPU results.
+The [CUDA chunk cache](docs/GPU_COMPUTE.md) hashes and verifies each content chunk once, computes new chunks' block outputs, and retains those outputs across constructed edits. It preserves the dense path's block boundaries, padding and output order, reconstructs every byte and verifies file SHA256 hashes. The operation tested is float32 block-local rFFT, width 2048, batch cap 1024.
+
+The primary result is **complete lifecycle elapsed time**, including cold construction, all updates, every full output, integrity checks and cache teardown. Three [frozen benchmark sessions](docs/GPU_LIFECYCLE_REPEATABILITY.md) on an RTX 5070 Ti used 21 alternating pairs per workload:
+
+| Constructed edits after cold start | Median paired savings across the three sessions | Cache wins per session |
+| ---: | --- | --- |
+| 1 | -2.19, -2.79, -0.60 ms | 1/21, 2/21, 8/21 |
+| 2 | +1.43, -0.37, +0.006 ms | 14/21, 9/21, 12/21 |
+| 4 | +2.52, +1.73, +2.14 ms | 14/21, 14/21, 18/21 |
+| 8 | +6.66, +7.92, +9.43 ms | 20/21, 20/21, 19/21 |
+
+The two-edit margin is unstable; four and eight edits improve time in all three sessions. These are cumulative constructed edits of all 25 pinned Canterbury/Calgary files, not observed editing histories. Every output matched bitwise and every byte reconstructed exactly. The cache is currently unbounded. These measurements establish neither neural-inference nor energy savings; cold caching remains slower. Earlier experiments and negative results remain in the [experiment history](docs/GPU_COMPUTE.md#experiment-history).
+
+Use an existing CUDA-enabled Python environment (tested: Python 3.13.13, Torch 2.11.0+cu128, NumPy 2.5.3). Torch is optional for CPU-only tests and is not installed by the project. From the repository root:
+
+```powershell
+conda activate torch5070
+$env:PYTHONPATH = 'src'
+python -m unittest discover -s tests -v
+python scripts/verify_gpu_integration.py
+```
+
+The verification command checks committed result consistency and the freeze manifest; with CUDA available it checks exact full outputs and reconstruction on a small fixture, without adding benchmark measurements. To reproduce the existing full-corpus experiment:
+
+```powershell
+python scripts/download_corpora.py data/corpora
+python scripts/benchmark_gpu_lifecycle.py data/corpora --repeats 21 --width 2048 --batch-blocks 1024
+```
+
+That writes `results/lossless/gpu_lifecycle.json`; the original recorded lifecycle also remains archived under `results/lossless/gpu_lifecycle_frozen_sessions/original_lifecycle.json`. For three independent new sessions, use a **new** archive directory so the recorded sessions are never overwritten:
+
+```powershell
+python scripts/repeat_gpu_lifecycle.py 1 --archive-dir results/reproductions/new-lifecycle-sessions
+python scripts/repeat_gpu_lifecycle.py 2 --archive-dir results/reproductions/new-lifecycle-sessions
+python scripts/repeat_gpu_lifecycle.py 3 --archive-dir results/reproductions/new-lifecycle-sessions
+```
+
+The Windows helper `scripts/run_gpu.ps1` uses the lifecycle benchmark and defaults to 21 pairs. The pinned inputs require a public download; verification never substitutes CPU timing for CUDA results.
 
 ## About this work
 

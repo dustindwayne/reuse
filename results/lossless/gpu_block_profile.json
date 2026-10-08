@@ -1,0 +1,668 @@
+{
+  "median": {
+    "dense": {
+      "total_wall_s": 0.015444799995748326,
+      "planning_lookup_s": 0.006283200011239387,
+      "host_cpu_s": 0.015625,
+      "fft_device_ms": 0.29180800169706345,
+      "peak_allocated_vram_bytes": 58957312,
+      "output_bytes": 28716400,
+      "batch_blocks": 1024,
+      "input_bytes": 5952406,
+      "computed_input_bytes": 5952406,
+      "reused_bytes": 0,
+      "computed_blocks": 3502,
+      "output_blocks": 3502
+    },
+    "cache": {
+      "total_wall_s": 0.01846829999703914,
+      "planning_lookup_s": 0.009451600009924732,
+      "host_cpu_s": 0.015625,
+      "fft_device_ms": 0.29849599674344063,
+      "peak_allocated_vram_bytes": 80175616,
+      "output_bytes": 28716400,
+      "batch_blocks": 1024,
+      "input_bytes": 5952406,
+      "computed_input_bytes": 5361251,
+      "reused_bytes": 591155,
+      "computed_blocks": 3094,
+      "output_blocks": 3502
+    }
+  },
+  "median_paired_wall_difference_s": -0.0025274999934481457,
+  "wall_reduction_fraction": -0.19576168044410602,
+  "full_outputs_bitwise_equal": true,
+  "full_inputs_byte_exact": true,
+  "runs": [
+    {
+      "cache": {
+        "total_wall_s": 0.018570999993244186,
+        "planning_lookup_s": 0.009855199998128228,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.254016000777483,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.013934699993114918,
+        "planning_lookup_s": 0.006131700007244945,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.2547519952058792,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.04600370000116527,
+        "planning_lookup_s": 0.03719920000003185,
+        "host_cpu_s": 0.046875,
+        "fft_device_ms": 0.36428799852728844,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.01846829999703914,
+        "planning_lookup_s": 0.008847799996146932,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.40985600650310516,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.01923549998900853,
+        "planning_lookup_s": 0.0093837999884272,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.4099520072340965,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.014996300000348128,
+        "planning_lookup_s": 0.0066605999891180545,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.2590719982981682,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.014659499996923842,
+        "planning_lookup_s": 0.006227000005310401,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.26710400357842445,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.019930499998736195,
+        "planning_lookup_s": 0.009959500006516464,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.47792000602930784,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.016915900007006712,
+        "planning_lookup_s": 0.009031599998706952,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.24646400287747383,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.01712819999374915,
+        "planning_lookup_s": 0.006217100002686493,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.25814400240778923,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.014475499992840923,
+        "planning_lookup_s": 0.006090900002163835,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.26470400393009186,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.01690240000607446,
+        "planning_lookup_s": 0.00904820000869222,
+        "host_cpu_s": 0.03125,
+        "fft_device_ms": 0.27759999781847,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.01965419999032747,
+        "planning_lookup_s": 0.009179699991364032,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.29849599674344063,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.014157700003124774,
+        "planning_lookup_s": 0.0062470999982906505,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.24537599831819534,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.014650700002675876,
+        "planning_lookup_s": 0.006205400000908412,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.24528000131249428,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.019545000002835877,
+        "planning_lookup_s": 0.010774499998660758,
+        "host_cpu_s": 0.03125,
+        "fft_device_ms": 0.33110399544239044,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.017166999998153187,
+        "planning_lookup_s": 0.009181200002785772,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.25840000063180923,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.016699900006642565,
+        "planning_lookup_s": 0.006492400003480725,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.3920319974422455,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.014442600004258566,
+        "planning_lookup_s": 0.00612199999159202,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.2359360009431839,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.01817490000394173,
+        "planning_lookup_s": 0.009075099995243363,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.9795200228691101,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.017861800006357953,
+        "planning_lookup_s": 0.00934160000178963,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.2670080028474331,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.017032599993399344,
+        "planning_lookup_s": 0.007104099990101531,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.5218240097165108,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.016244699989329092,
+        "planning_lookup_s": 0.0061729999870294705,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.5807999931275845,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.01778940000804141,
+        "planning_lookup_s": 0.009763000009115785,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.2905600033700466,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.019012399992789142,
+        "planning_lookup_s": 0.009973899999749847,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.5175040066242218,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.015444799995748326,
+        "planning_lookup_s": 0.006110899994382635,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.35631999373435974,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.01643020000483375,
+        "planning_lookup_s": 0.0063338000036310405,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.33100800588727,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.016922900002100505,
+        "planning_lookup_s": 0.009111000006669201,
+        "host_cpu_s": 0.03125,
+        "fft_device_ms": 0.25516799837350845,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.01973280000675004,
+        "planning_lookup_s": 0.009116700006416067,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.36102400347590446,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.014199199998984113,
+        "planning_lookup_s": 0.006135700008599088,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.2527039982378483,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.014436400000704452,
+        "planning_lookup_s": 0.006283200011239387,
+        "host_cpu_s": 0.0,
+        "fft_device_ms": 0.26361600309610367,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.01916440000059083,
+        "planning_lookup_s": 0.010285799988196231,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.3890560008585453,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.017595999990589917,
+        "planning_lookup_s": 0.009609899992938153,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.24035199731588364,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.018328300007851794,
+        "planning_lookup_s": 0.006645200002822094,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.5274879969656467,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.017581899999640882,
+        "planning_lookup_s": 0.006353400007355958,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.32761599868535995,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.018030699997325428,
+        "planning_lookup_s": 0.009451600009924732,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.31251199170947075,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.020313100001658313,
+        "planning_lookup_s": 0.010629299998981878,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.4887999966740608,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.017785600008210167,
+        "planning_lookup_s": 0.006610800002817996,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.41334400326013565,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "dense": {
+        "total_wall_s": 0.014920000001438893,
+        "planning_lookup_s": 0.006283200011239387,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.29180800169706345,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      },
+      "cache": {
+        "total_wall_s": 0.019628599999123253,
+        "planning_lookup_s": 0.010355999998864718,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.25996800139546394,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      }
+    },
+    {
+      "cache": {
+        "total_wall_s": 0.018145199996070005,
+        "planning_lookup_s": 0.009491699995123781,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.2534400001168251,
+        "peak_allocated_vram_bytes": 80175616,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5361251,
+        "reused_bytes": 591155,
+        "computed_blocks": 3094,
+        "output_blocks": 3502
+      },
+      "dense": {
+        "total_wall_s": 0.016729099996155128,
+        "planning_lookup_s": 0.006975500000407919,
+        "host_cpu_s": 0.015625,
+        "fft_device_ms": 0.3054719977080822,
+        "peak_allocated_vram_bytes": 58957312,
+        "output_bytes": 28716400,
+        "batch_blocks": 1024,
+        "input_bytes": 5952406,
+        "computed_input_bytes": 5952406,
+        "reused_bytes": 0,
+        "computed_blocks": 3502,
+        "output_blocks": 3502
+      }
+    }
+  ]
+}

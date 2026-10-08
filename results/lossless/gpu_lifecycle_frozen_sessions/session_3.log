@@ -1,0 +1,5 @@
+edits 1 {"median_dense_s": 0.03456709999591112, "median_cache_s": 0.0359316999965813, "median_paired_saving_s": -0.0006030000076862052, "cache_wins": 8, "ties": 0, "pairs": 21, "full_outputs_bitwise_equal": true, "full_inputs_byte_exact": true}
+edits 2 {"median_dense_s": 0.05199480000010226, "median_cache_s": 0.05128010000044014, "median_paired_saving_s": 6.300004315562546e-06, "cache_wins": 12, "ties": 0, "pairs": 21, "full_outputs_bitwise_equal": true, "full_inputs_byte_exact": true}
+edits 4 {"median_dense_s": 0.08554020000156015, "median_cache_s": 0.08308730000862852, "median_paired_saving_s": 0.0021369999885791913, "cache_wins": 18, "ties": 0, "pairs": 21, "full_outputs_bitwise_equal": true, "full_inputs_byte_exact": true}
+edits 8 {"median_dense_s": 0.1502180999959819, "median_cache_s": 0.14421279999078251, "median_paired_saving_s": 0.009433800005353987, "cache_wins": 19, "ties": 0, "pairs": 21, "full_outputs_bitwise_equal": true, "full_inputs_byte_exact": true}
+Failed to find real location of C:\Users\ddwan\anaconda3\envs\torch5070\python.exe

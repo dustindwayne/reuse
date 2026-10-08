@@ -1,0 +1,6 @@
+{
+  "status": "blocked",
+  "reason": "PyTorch is not installed; no CUDA benchmark executed.",
+  "gpu_measured": false,
+  "public_readiness": "pending GPU evidence"
+}

@@ -1,0 +1,9 @@
+# Preserve the byte hashes recorded by the Windows benchmark freeze.
+src/**/*.py text eol=crlf
+scripts/benchmark_gpu.py text eol=crlf
+scripts/benchmark_chunk_gpu.py text eol=lf
+scripts/benchmark_gpu_lifecycle.py text eol=lf
+results/lossless/corpus_sources.json text eol=crlf
+# Generated measurements and archived session evidence retain original bytes.
+results/lossless/gpu*.json -text whitespace=cr-at-eol
+results/lossless/gpu_lifecycle_frozen_sessions/** -text whitespace=cr-at-eol

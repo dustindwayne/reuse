@@ -1,0 +1,18 @@
+{
+  "session": 3,
+  "started_utc": "2026-10-08T18:54:18.009968+00:00",
+  "finished_utc": "2026-10-08T18:54:42.306475+00:00",
+  "independent_process": true,
+  "command": [
+    "C:\\Users\\ddwan\\anaconda3\\envs\\torch5070\\python.exe",
+    "C:\\Users\\ddwan\\Desktop\\test\\scripts\\benchmark_gpu_lifecycle.py",
+    "data/corpora",
+    "--repeats",
+    "21",
+    "--width",
+    "2048",
+    "--batch-blocks",
+    "1024"
+  ],
+  "source_hashes_unchanged": true
+}
