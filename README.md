@@ -1,5 +1,15 @@
 # Shared Data Representation
 
+## Reduced-compute path
+
+The [fast shared store](docs/FAST_COMPUTE.md) processes complete files and reconstructs every byte. It uses bounded content boundary searches, stores repeated chunks once, and encodes each new chunk once. On all 25 Canterbury and Calgary files, complete encode-plus-restore CPU time fell 42.7% against a matched whole-file cached store. With two constructed edited versions, CPU time fell 68.3%. The single-version archive is 17.2% larger; these are CPU measurements for this workload, not energy measurements or a universal speedup.
+
+```bash
+python scripts/fast_store.py pack versions.fst snapshots/original snapshots/edited
+python scripts/fast_store.py unpack versions.fst restored
+python scripts/benchmark_fast.py /path/to/corpora
+```
+
 ## About this work
 
 I build these experiments because I want to understand how things work and whether they can work better. Curiosity and learning are the reason I keep going: ask a question, build something, test it, and change what the evidence says needs changing.
@@ -25,7 +35,7 @@ The [adaptive experiment](docs/ADAPTIVE.md) selects window sizes by actual encod
 
 ## Real-corpus evaluation
 
-[Complete Canterbury and Calgary tests](docs/CORPUS_EVALUATION.md): 25 full files, 5.95 MB, exact reconstruction throughout. Whole-file transforms followed by zlib reduce payload totals by about 2.7% against direct zlib. The current chunked archive still loses to ZIP and the Python candidate search is much slower than direct compression. Per-file baselines, matched controls, chunk sensitivity and reproduction scripts are included.
+[Complete Canterbury and Calgary tests](docs/CORPUS_EVALUATION.md): 25 full files, 5.95 MB, exact reconstruction throughout. Whole-file transforms followed by zlib reduce payload totals by about 2.7% against direct zlib. The earlier Python candidate search is much slower than direct compression; the reduced-compute path above replaces that search. Per-file baselines, matched controls, chunk sensitivity and reproduction scripts are included.
 
 ## Pattern matching before encoding
 
