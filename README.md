@@ -1,5 +1,9 @@
 # Shared Data Representation
 
+## About this work
+
+I build these experiments because I want to understand how things work and whether they can work better. Curiosity and learning are the reason I keep going: ask a question, build something, test it, and change what the evidence says needs changing.
+
 The [integrated data container](docs/CONTAINER.md) stores shared chunks once across files and chooses among raw storage, dynamic windows, repeated-value extraction, shared grammar, grid offsets and zlib by actual encoded size. Structural transforms can also feed zlib; [composition measurements](docs/COMPOSED.md) record the results. It preserves exact file contents. Run `python scripts/benchmark_container.py`.
 
 Current direction: a **lossless shared representation** that stores distinct pieces once and preserves exact reconstruction. The new [lossless foundation](docs/LOSSLESS.md) implements shared byte and sequence definitions, a binary file format, exact decoding and measured storage comparisons.
@@ -22,6 +26,10 @@ The [adaptive experiment](docs/ADAPTIVE.md) selects window sizes by actual encod
 ## Real-corpus evaluation
 
 [Complete Canterbury and Calgary tests](docs/CORPUS_EVALUATION.md): 25 full files, 5.95 MB, exact reconstruction throughout. Whole-file transforms followed by zlib reduce payload totals by about 2.7% against direct zlib. The current chunked archive still loses to ZIP and the Python candidate search is much slower than direct compression. Per-file baselines, matched controls, chunk sensitivity and reproduction scripts are included.
+
+## Pattern matching before encoding
+
+The [pattern-first path](docs/PATTERN_FIRST.md) finds exact reusable ranges before establishing literal boundaries, including shifted data and cross-file matches. It stores backward references and applies the remaining framework to new literal data. Shifted-copy tests improve substantially; the current greedy matcher slightly enlarges the real-corpus archives against the same pipeline without matching. Run `python scripts/container.py pack --patterns example.ptf data/train.txt data/validation.txt`.
 
 ## Earlier lossy experiment
 

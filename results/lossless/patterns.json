@@ -1,0 +1,103 @@
+[
+  {
+    "name": "shifted_and_edited",
+    "input_bytes": 98323,
+    "methods": {
+      "pattern_first": {
+        "bytes": 33146,
+        "encode_seconds": 0.610612915000047,
+        "decode_seconds": 0.00020732500001940934,
+        "exact_roundtrip": true,
+        "literal_bytes": 32787,
+        "referenced_bytes": 65536,
+        "references": 3,
+        "instruction_bytes": 21,
+        "literal_codec": 0,
+        "outer_zlib": true,
+        "uncompressed_container_bytes": 33147
+      },
+      "same_pipeline_without_matches": {
+        "bytes": 98666,
+        "encode_seconds": 1.7669780510000237,
+        "decode_seconds": 0.00011607999999796448,
+        "exact_roundtrip": true,
+        "literal_bytes": 98323,
+        "referenced_bytes": 0,
+        "references": 0,
+        "instruction_bytes": 4,
+        "literal_codec": 0,
+        "outer_zlib": false,
+        "uncompressed_container_bytes": 98666
+      },
+      "fixed_chunks": {
+        "bytes": 91541,
+        "encode_seconds": 1.5179831479999848,
+        "exact_roundtrip": true
+      }
+    }
+  },
+  {
+    "name": "canterbury",
+    "input_bytes": 2810784,
+    "methods": {
+      "pattern_first": {
+        "bytes": 639958,
+        "encode_seconds": 15.716633838000007,
+        "decode_seconds": 0.01610729800000854,
+        "exact_roundtrip": true,
+        "literal_bytes": 2370503,
+        "referenced_bytes": 440281,
+        "references": 5711,
+        "instruction_bytes": 43358,
+        "literal_codec": 1,
+        "outer_zlib": true,
+        "uncompressed_container_bytes": 762133
+      },
+      "same_pipeline_without_matches": {
+        "bytes": 632367,
+        "encode_seconds": 16.23743302700001,
+        "decode_seconds": 0.010963715999992019,
+        "exact_roundtrip": true,
+        "literal_bytes": 2810784,
+        "referenced_bytes": 0,
+        "references": 0,
+        "instruction_bytes": 5,
+        "literal_codec": 1,
+        "outer_zlib": true,
+        "uncompressed_container_bytes": 733534
+      }
+    }
+  },
+  {
+    "name": "calgary",
+    "input_bytes": 3141622,
+    "methods": {
+      "pattern_first": {
+        "bytes": 1034762,
+        "encode_seconds": 19.194199497,
+        "decode_seconds": 0.022461513999928684,
+        "exact_roundtrip": true,
+        "literal_bytes": 2525698,
+        "referenced_bytes": 615924,
+        "references": 8273,
+        "instruction_bytes": 63521,
+        "literal_codec": 1,
+        "outer_zlib": true,
+        "uncompressed_container_bytes": 1062341
+      },
+      "same_pipeline_without_matches": {
+        "bytes": 1028367,
+        "encode_seconds": 19.872858938000036,
+        "decode_seconds": 0.014110627000036402,
+        "exact_roundtrip": true,
+        "literal_bytes": 3141622,
+        "referenced_bytes": 0,
+        "references": 0,
+        "instruction_bytes": 5,
+        "literal_codec": 1,
+        "outer_zlib": true,
+        "uncompressed_container_bytes": 1028933
+      }
+    }
+  }
+]
