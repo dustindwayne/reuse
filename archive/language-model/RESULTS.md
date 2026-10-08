@@ -37,7 +37,7 @@ Seeds 7, 11, 23. Mean ± sample standard deviation across runs; three seeds are 
 | random_surprise | 0.784131 ± 0.000972 | 7357 | 39.40% |
 | fixed_compute | 0.776195 ± 0.005443 | 7142 | 50.00% |
 
-Raw metrics/configs are under [results/ablations](../../results/ablations); per-example component CSVs preserve confidence, entropy, mismatch, surprise, depth, support and actual selected level. Historical classifier metrics are separate in [provenance](../../docs/PROVENANCE.md).
+Raw metrics/configs are under [results/ablations](results/ablations); per-example component CSVs preserve confidence, entropy, mismatch, surprise, depth, support and actual selected level.
 
 ## Interpretation
 

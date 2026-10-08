@@ -62,7 +62,7 @@ python scripts/benchmark_fast.py /path/to/corpora
 
 [Experiment trail](docs/EXPERIMENT_TRAIL.md) links earlier representations, failed approaches, baseline corrections and historical language-model work. Earlier reports are archived rather than presented as current findings. [Validation](docs/VALIDATION.md) separates checked-in tests from reported local tests.
 
-MIT licensed. Historical ideas belong to Dustin; implementation assistance and source limits are documented in [provenance](docs/PROVENANCE.md).
+MIT licensed. Created by Dustin with AI implementation assistance. [Evidence and attribution](docs/PROVENANCE.md).
 
 ## Repository layout
 

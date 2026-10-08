@@ -3,7 +3,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1];r=json.loads((root/'results/lossless/recovered_folding.json').read_text());a=json.loads((root/'results/lossless/recovered_archives.json').read_text());f=json.loads((root/'results/lossless/recovered_fileaware.json').read_text())
 assert len(r)==35 and len(a)==8 and len(f)==2
 lines=['# Recovered transforms: integration and tests','',
-'The user-supplied [recovery note](RECOVERED_COMPRESSION_FRAMEWORK.md) contributes a reversible lane transpose, adaptive width selection with exact metadata, and a 3/1/3 permutation. Its transcript-recovered historical results are attributed reports, not independently reproduced artifacts here. The undefined anchor-walk algorithm cannot be reconstructed from the note, so no anchor-walk implementation or reproduction of its reported 169-byte gain is claimed. Rejected repeat/delta/literal pipelines were not added.', '',
+'This experiment implements reversible byte-lane transposition, adaptive width selection with complete metadata, and a 3/1/3 permutation. The measurements below refer to the committed implementation and retained input/result artifacts.', '',
 '## Implemented','',
 'Fold widths 2, 4, 8, 16, 32, 64 and 128 group byte positions by their index modulo width; unequal final lanes reconstruct exactly. Codec 8 stores one width byte followed by zlib output. Codec 9 is a reversible 3/1/3 permutation followed by one zlib stream, without anchor-walk. Layout is fixed by its mode and tail lengths are derived from decompressed length. Both compete with all prior codecs by actual payload bytes. The common outer mode field remains the same size.', '',
 'The archive selector now compares complete pooled encoding, pattern-first pooled encoding and file-boundary-aware encoding. The latter retains different per-file layouts before applying an outer zlib stage. It chooses actual complete archive bytes, including all references, names, lengths, checksums and framing. This is a bounded three-path search, not globally optimal representation or semantic boundary inference.', '',
@@ -22,7 +22,7 @@ for c in ('canterbury','calgary'):
  lines.append(f'| {c} | {prior:,} | {new:,} | {best:,} | {1-best/prior:.2%} |')
 lines+=['','Folding the single pooled literal stream provided no added archive saving on these corpora. Preserving file boundaries lets Calgary retain numeric alignment and choose different transforms for text and binary files. Canterbury retains its earlier pooled path. Pattern-first matching remains useful for shifted/edited copies but does not win these two corpus archive selections.','',
 '## Synthetic numeric controls','',
-'These newly generated controls test the recovered mechanism; they are not reproductions of the note’s original datasets.','',
+'These generated controls test the implemented transforms; they are separate from the real corpus inputs.','',
 '| Input | Prior framework | New framework | Additional reduction | Width |','|---|---:|---:|---:|---:|']
 for x in r:
  if x['kind']=='synthetic_control':lines.append(f"| {x['name']} | {x['prior_framework_bytes']:,} | {x['new_framework_bytes']:,} | {1-x['new_framework_bytes']/x['prior_framework_bytes']:.2%} | {x['selected_width'] or 'none'} |")

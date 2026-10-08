@@ -1,13 +1,5 @@
 # Architecture
 
-## Reasoning transition
-
-The historical notebook reports Dustin asking:
-
-> what if the submarine window expanded and contracted depending on needed context?
-
-This is secondary evidence, not a recovered original message. This experiment narrows the question to whether predictable orthographic states can guide variable neural depth. It does not implement oversized-model streaming or a cognitive runtime.
-
 ## Structural representation
 
 24 float features: capped length, vowel ratio, alphabetic/digit/punctuation flags, repetition, initial/final vowels, four leading vowel/consonant positions, three prefix flags, five suffix flags and four chunk flags. Numeric values lie in [0,1]. Quantized 1/16 states supply trie keys. This is lossy: different words can share a state. Morphology is heuristic; an `s` suffix flag is not a linguistic parser. Unicode words receive simple deterministic handling, not multilingual linguistic correctness.

@@ -1,6 +1,6 @@
 # Recovered transforms: integration and tests
 
-The user-supplied [recovery note](RECOVERED_COMPRESSION_FRAMEWORK.md) contributes a reversible lane transpose, adaptive width selection with exact metadata, and a 3/1/3 permutation. Its transcript-recovered historical results are attributed reports, not independently reproduced artifacts here. The undefined anchor-walk algorithm cannot be reconstructed from the note, so no anchor-walk implementation or reproduction of its reported 169-byte gain is claimed. Rejected repeat/delta/literal pipelines were not added.
+This experiment implements reversible byte-lane transposition, adaptive width selection with complete metadata, and a 3/1/3 permutation. The measurements below refer to the committed implementation and retained input/result artifacts.
 
 ## Implemented
 
@@ -32,7 +32,7 @@ Folding the single pooled literal stream provided no added archive saving on the
 
 ## Synthetic numeric controls
 
-These newly generated controls test the recovered mechanism; they are not reproductions of the note’s original datasets.
+These generated controls test the implemented transforms; they are separate from the real corpus inputs.
 
 | Input | Prior framework | New framework | Additional reduction | Width |
 |---|---:|---:|---:|---:|

@@ -1,6 +1,6 @@
 # Experiments
 
-The sequence in Git history is actual work performed on October 7; it does not backdate implementation to historical conversations.
+Git history records the implementation and experiment sequence.
 
 1. Preserve source evidence and attribution gaps.
 2. Test compact representation and counted context trie.

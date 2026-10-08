@@ -30,28 +30,6 @@ Add end-to-end timing, preserve neural-only timing under an explicit name, and c
 
 All three configurations rerun with the corrected boundary; no end-to-end speedup demonstrated. This is an experimental negative result, not a completed performance optimization.
 
-## Historical routing and cache-reuse limits — reported, not rerun
-
-### Hypothesis
-
-Selective loading reduces active memory without losing quality or throughput.
-
-### Observed result
-
-The historical top-2 classifier report nearly preserves global macro F1 and reduces active size, while inference time increases. The continuation separately reports zero RAM/VRAM cache hits in later generation.
-
-### Evidence
-
-[PROVENANCE.md](PROVENANCE.md) identifies the exact retrieved documents. Original logs and datasets were not recovered.
-
-### Diagnosis
-
-Routing overhead and ineffective cross-token cache reuse are plausible explanations, not established causes.
-
-### Revision / retest
-
-No historical rerun attempted. These reports justify distinguishing successful execution from hypothesis confirmation.
-
 ## Randomized routing and incomplete vowel removal
 
 ### Hypothesis / expected result

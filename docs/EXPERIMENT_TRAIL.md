@@ -16,4 +16,4 @@ The current objective is less **complete elapsed time**, preserving full data an
 | Real corpus inputs | [Corpus evaluation](CORPUS_EVALUATION.md) | Complete pinned Canterbury/Calgary evaluation |
 | Earlier language model | [Historical overview](archive/EARLIER_LANGUAGE_MODEL.md), [results](../archive/language-model/RESULTS.md), [architecture](../archive/language-model/ARCHITECTURE.md) | Optional neural work skipped; structural overhead prevented overall speedup |
 
-[Provenance](PROVENANCE.md), [failures](FAILURE_LOG.md), [timeline](TIMELINE.md), and Git history retain attribution and corrections. Archived reports reflect knowledge at their stage; use the current lifecycle report for GPU conclusions. Historical language-model résumé wording is not the current framework description.
+[Provenance](PROVENANCE.md), [failures](FAILURE_LOG.md), and Git history retain attribution and corrections. Archived reports reflect knowledge at their stage; use the current lifecycle report for GPU conclusions. Historical language-model résumé wording is not the current framework description.
