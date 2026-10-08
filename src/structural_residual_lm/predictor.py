@@ -2,6 +2,7 @@
 import numpy as np
 from .encoder import StructuralEncoder
 from .trie import ContextTrie
+from .residual import residual
 
 class StructuralPredictor:
     def __init__(self,depth=3,disabled=(),no_trie=False):
@@ -17,9 +18,9 @@ class StructuralPredictor:
         next_state=self.trie.predict(states,dimension)
         if self.no_trie:
             for p in [previous,next_state]: p.update(expected=np.zeros(dimension),confidence=0.,entropy=1.,depth=0,count=0)
-        observed=e.encode(history[-1]);residual=observed-previous["expected"]
-        mismatch=float(np.abs(residual).mean())
-        return dict(prior=next_state["expected"],residual=residual,confidence=previous["confidence"],
+        observed=e.encode(history[-1]);delta=residual(observed,previous["expected"])
+        mismatch=float(np.abs(delta).mean())
+        return dict(prior=next_state["expected"],residual=delta,confidence=previous["confidence"],
                     entropy=previous["entropy"],mismatch=mismatch,depth=previous["depth"],count=previous["count"])
 
     def features(self,sequences,locations):
