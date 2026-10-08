@@ -22,7 +22,7 @@ for c in ('canterbury','calgary'):
  lines.append(f"| {c} | {find('framework',4096):,} | {find('matched_zlib',4096):,} | {find('framework',32768):,} | {matched:,} | {find('zip'):,} |")
 lines+=['','## Every file, including standard baselines','','Per-file framework and matched-control sizes include a one-file archive. zlib/gzip/bzip2/xz sizes include their own stream headers but no filename/manifest. Per-file times are medians of three serial runs; all compressed bytes are deterministic and all methods pass exact reconstruction. Defaults: zlib level 6, gzip level 9, bzip2 level 9, xz preset 6, ZIP DEFLATE default.','',
 '| File | Raw | Framework 4 KB | Matched 4 KB | zlib | gzip | bzip2 | xz | Whole-file selected mode | Whole-file selected bytes |','|---|---:|---:|---:|---:|---:|---:|---:|---|---:|']
-modes={0:'raw',1:'zlib',2:'dynamic',3:'grammar',4:'grid',5:'dynamic → zlib',6:'grammar → zlib',7:'grid → zlib'}
+modes={0:'raw',1:'zlib',2:'dynamic',3:'grammar',4:'grid',5:'dynamic → zlib',6:'grammar → zlib',7:'grid → zlib',8:'fold → zlib',9:'3/1/3 → zlib'}
 for f in sorted(r['files'],key=lambda x:(x['corpus'],x['name'])):
  key=f['corpus']+'/'+f['name'];whole=next(x for x in w['files'] if x['path']==key);m=f['methods'];vals=[f['input_bytes']]+[m[k]['bytes'] for k in ('framework_4k','matched_zlib_4k','zlib','gzip','bzip2','xz')]
  lines.append('| '+key+' | '+' | '.join(f'{v:,}' for v in vals)+' | '+modes[whole['selected_mode']]+' | '+f"{whole['selected_payload_bytes']:,}"+' |')

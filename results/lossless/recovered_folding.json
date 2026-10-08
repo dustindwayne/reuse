@@ -1,0 +1,1997 @@
+[
+  {
+    "name": "calgary/bib",
+    "kind": "real_corpus",
+    "raw_bytes": 111261,
+    "sha256": "0f1a13936e358191533aca4a32ff42906d1b7f641f3afb0a90458b2410419fcf",
+    "direct_zlib_bytes": 35228,
+    "prior_framework_bytes": 33401,
+    "new_framework_bytes": 33401,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 48143,
+    "prior_search_seconds": 2.3066827160000685,
+    "additional_folding_seconds": 0.043715553999845724,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 48143
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 60416
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 70690
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 76219
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 77854
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 78065
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 78105
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 60775
+      }
+    ]
+  },
+  {
+    "name": "calgary/book1",
+    "kind": "real_corpus",
+    "raw_bytes": 768771,
+    "sha256": "9ffa47cd93bccd732f20e0c304203cfbc1b8a91bedac536e2d8f6051003d9951",
+    "direct_zlib_bytes": 313582,
+    "prior_framework_bytes": 306209,
+    "new_framework_bytes": 306209,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 425056,
+    "prior_search_seconds": 15.704714604999936,
+    "additional_folding_seconds": 0.4047530889997688,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 425056
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 480648
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 488698
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 489312
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 489369
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 489536
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 489441
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 450910
+      }
+    ]
+  },
+  {
+    "name": "calgary/book2",
+    "kind": "real_corpus",
+    "raw_bytes": 610856,
+    "sha256": "c8538730cf2ce6a243acf3eb299c43d619b5c695d892f4884df796c13081fdf8",
+    "direct_zlib_bytes": 206664,
+    "prior_framework_bytes": 200211,
+    "new_framework_bytes": 200211,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 304557,
+    "prior_search_seconds": 12.535898978000205,
+    "additional_folding_seconds": 0.24984315200026685,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 304557
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 374807
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 397193
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 403179
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 405014
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 405606
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 405856
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 351539
+      }
+    ]
+  },
+  {
+    "name": "calgary/geo",
+    "kind": "real_corpus",
+    "raw_bytes": 102400,
+    "sha256": "913ff6f45610599020c02f543a0d5a1f46cf772412e25a568b683d23db8c447d",
+    "direct_zlib_bytes": 68433,
+    "prior_framework_bytes": 63791,
+    "new_framework_bytes": 52437,
+    "selected_mode": 8,
+    "selected_width": 4,
+    "best_fold_bytes": 52437,
+    "prior_search_seconds": 1.0497845679997226,
+    "additional_folding_seconds": 0.050076752999757446,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 63929
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 52437
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 55727
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 57921
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 59155
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 60765
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 61716
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 70486
+      }
+    ]
+  },
+  {
+    "name": "calgary/news",
+    "kind": "real_corpus",
+    "raw_bytes": 377109,
+    "sha256": "7f0482f9774681429eb7021050c17966f6acf19450e170de6611e1ed953d42e8",
+    "direct_zlib_bytes": 144800,
+    "prior_framework_bytes": 142057,
+    "new_framework_bytes": 142057,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 199416,
+    "prior_search_seconds": 8.5011987580001,
+    "additional_folding_seconds": 0.1610097279999536,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 199416
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 233497
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 249448
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 257194
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 263650
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 265722
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 266249
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 227161
+      }
+    ]
+  },
+  {
+    "name": "calgary/obj1",
+    "kind": "real_corpus",
+    "raw_bytes": 21504,
+    "sha256": "8c06109caffd7e794516e4ed10095b0238ea8df63ed66840907cd4dd23e2cf72",
+    "direct_zlib_bytes": 10317,
+    "prior_framework_bytes": 10317,
+    "new_framework_bytes": 10317,
+    "selected_mode": 1,
+    "selected_width": null,
+    "best_fold_bytes": 11684,
+    "prior_search_seconds": 0.20992747300033443,
+    "additional_folding_seconds": 0.0053900929997325875,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 11684
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 12862
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 13883
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 14835
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 15686
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 16208
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 16456
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 13256
+      }
+    ]
+  },
+  {
+    "name": "calgary/obj2",
+    "kind": "real_corpus",
+    "raw_bytes": 246814,
+    "sha256": "8b3e7f028bfefaebdd48a791060a1ab11d1ffd9bf27e0d63b15e58dda0deb984",
+    "direct_zlib_bytes": 81505,
+    "prior_framework_bytes": 81505,
+    "new_framework_bytes": 81505,
+    "selected_mode": 1,
+    "selected_width": null,
+    "best_fold_bytes": 93474,
+    "prior_search_seconds": 2.174114057999759,
+    "additional_folding_seconds": 0.10409382299985737,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 93474
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 118208
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 150365
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 170604
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 184258
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 194088
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 197840
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 140372
+      }
+    ]
+  },
+  {
+    "name": "calgary/paper1",
+    "kind": "real_corpus",
+    "raw_bytes": 53161,
+    "sha256": "8d9c42d9fa58b5bce1a8b5fae3cc27c9eb7cc7a032bc12a633d44e816497e143",
+    "direct_zlib_bytes": 18558,
+    "prior_framework_bytes": 18282,
+    "new_framework_bytes": 18282,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 26203,
+    "prior_search_seconds": 1.1507307950000722,
+    "additional_folding_seconds": 0.017963423999844963,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 26203
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 32208
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 34807
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 35680
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 36186
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 36295
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 36374
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 31392
+      }
+    ]
+  },
+  {
+    "name": "calgary/paper2",
+    "kind": "real_corpus",
+    "raw_bytes": 82199,
+    "sha256": "dc4b9cf68094c632a920f4e76d0a0a8b9617b624c36928ca46a5d29798c5bbbe",
+    "direct_zlib_bytes": 29760,
+    "prior_framework_bytes": 29148,
+    "new_framework_bytes": 29148,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 42425,
+    "prior_search_seconds": 1.8614777009997852,
+    "additional_folding_seconds": 0.043007985999793164,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 42425
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 50457
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 52604
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 53003
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 53093
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 53121
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 53119
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 48045
+      }
+    ]
+  },
+  {
+    "name": "calgary/pic",
+    "kind": "real_corpus",
+    "raw_bytes": 513216,
+    "sha256": "0ec3a75089bb52342813496b17e51377bc9eba3cb519a444d67025354841d650",
+    "direct_zlib_bytes": 56465,
+    "prior_framework_bytes": 53384,
+    "new_framework_bytes": 53384,
+    "selected_mode": 5,
+    "selected_width": null,
+    "best_fold_bytes": 60574,
+    "prior_search_seconds": 2.203861744999813,
+    "additional_folding_seconds": 0.17163957999991908,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 60574
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 61864
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 62631
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 74101
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 87223
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 93446
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 97221
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 73148
+      }
+    ]
+  },
+  {
+    "name": "calgary/progc",
+    "kind": "real_corpus",
+    "raw_bytes": 39611,
+    "sha256": "151377a9d6aa9b7e872000269707a15e2b038c826340628e6f4d8b4db9ec3c19",
+    "direct_zlib_bytes": 13343,
+    "prior_framework_bytes": 13343,
+    "new_framework_bytes": 13343,
+    "selected_mode": 1,
+    "selected_width": null,
+    "best_fold_bytes": 18970,
+    "prior_search_seconds": 0.8790036120003606,
+    "additional_folding_seconds": 0.013312194999798521,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 18970
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 23695
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 26286
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 27328
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 27747
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 27980
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 27981
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 23557
+      }
+    ]
+  },
+  {
+    "name": "calgary/progl",
+    "kind": "real_corpus",
+    "raw_bytes": 71646,
+    "sha256": "9388db0cfb71ffbe5687d381819a5ff69cdd992d6931e0cf81a310a1caed0ba0",
+    "direct_zlib_bytes": 16255,
+    "prior_framework_bytes": 16178,
+    "new_framework_bytes": 16178,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 25938,
+    "prior_search_seconds": 1.5081190569999308,
+    "additional_folding_seconds": 0.029411472999981925,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 25938
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 33784
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 39221
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 43166
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 45347
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 46800
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 47210
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 35370
+      }
+    ]
+  },
+  {
+    "name": "calgary/progp",
+    "kind": "real_corpus",
+    "raw_bytes": 49379,
+    "sha256": "d0cd70ab5f7381a8584b25fa73b3608571a17ee1042cc5c546f63b904614d1bc",
+    "direct_zlib_bytes": 11228,
+    "prior_framework_bytes": 10850,
+    "new_framework_bytes": 10850,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 16549,
+    "prior_search_seconds": 0.9833611059998475,
+    "additional_folding_seconds": 0.018411513000046398,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 16549
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 21930
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 25315
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 27769
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 29694
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 31407
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 32528
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 23707
+      }
+    ]
+  },
+  {
+    "name": "calgary/trans",
+    "kind": "real_corpus",
+    "raw_bytes": 93695,
+    "sha256": "117a00c6af3e1c57f20013a8f1b468158f70634f685a348bedb7e4069cdd576a",
+    "direct_zlib_bytes": 19045,
+    "prior_framework_bytes": 18437,
+    "new_framework_bytes": 18437,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 30444,
+    "prior_search_seconds": 1.9513348209998185,
+    "additional_folding_seconds": 0.0333218340001622,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 30444
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 38044
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 47686
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 56162
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 63045
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 66387
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 67277
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 45770
+      }
+    ]
+  },
+  {
+    "name": "canterbury/alice29.txt",
+    "kind": "real_corpus",
+    "raw_bytes": 152089,
+    "sha256": "7467306ee0feed4971260f3c87421154a05be571d944e9cb021a5713700c38f0",
+    "direct_zlib_bytes": 54404,
+    "prior_framework_bytes": 52789,
+    "new_framework_bytes": 52789,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 78431,
+    "prior_search_seconds": 3.3605633859997397,
+    "additional_folding_seconds": 0.07532299200011039,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 78431
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 93282
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 96835
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 97442
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 97472
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 97462
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 97662
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 87178
+      }
+    ]
+  },
+  {
+    "name": "canterbury/asyoulik.txt",
+    "kind": "real_corpus",
+    "raw_bytes": 125179,
+    "sha256": "eaa3526fe53859f34ecdf255712f9ecf0b2c903451d4755b2edaa2e2599cb0fc",
+    "direct_zlib_bytes": 48897,
+    "prior_framework_bytes": 47454,
+    "new_framework_bytes": 47454,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 67730,
+    "prior_search_seconds": 2.6614719969998077,
+    "additional_folding_seconds": 0.05113126300011572,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 67730
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 78484
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 82235
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 83031
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 83188
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 83303
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 83293
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 74329
+      }
+    ]
+  },
+  {
+    "name": "canterbury/cp.html",
+    "kind": "real_corpus",
+    "raw_bytes": 24603,
+    "sha256": "e0cd21cef5b6c4069461e949be100080c3ce887de6f1dd8626c480528efaaf61",
+    "direct_zlib_bytes": 7961,
+    "prior_framework_bytes": 7819,
+    "new_framework_bytes": 7819,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 10388,
+    "prior_search_seconds": 0.5468446350000704,
+    "additional_folding_seconds": 0.006811100000049919,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 10388
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 12743
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 14900
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 16464
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 17034
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 17078
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 17061
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 12859
+      }
+    ]
+  },
+  {
+    "name": "canterbury/fields.c",
+    "kind": "real_corpus",
+    "raw_bytes": 11150,
+    "sha256": "85d73e354cc50cec76cb5a50537cf8dc035f8cbb8480f9e1cbe2f7d6c23393c7",
+    "direct_zlib_bytes": 3122,
+    "prior_framework_bytes": 3122,
+    "new_framework_bytes": 3122,
+    "selected_mode": 1,
+    "selected_width": null,
+    "best_fold_bytes": 4399,
+    "prior_search_seconds": 0.24400464500013186,
+    "additional_folding_seconds": 0.002749215999756416,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 4399
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 5712
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 6684
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 7254
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 7529
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 7644
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 7665
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 6055
+      }
+    ]
+  },
+  {
+    "name": "canterbury/grammar.lsp",
+    "kind": "real_corpus",
+    "raw_bytes": 3721,
+    "sha256": "1b0805dfc0ae706b35aac2bb4e15f02485efd24dda5dbd29de7b2f84d1a88c15",
+    "direct_zlib_bytes": 1222,
+    "prior_framework_bytes": 1222,
+    "new_framework_bytes": 1222,
+    "selected_mode": 1,
+    "selected_width": null,
+    "best_fold_bytes": 1616,
+    "prior_search_seconds": 0.07100941899989266,
+    "additional_folding_seconds": 0.0012336210002104053,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 1616
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 2006
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 2262
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 2399
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 2431
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 2430
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 2428
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 2055
+      }
+    ]
+  },
+  {
+    "name": "canterbury/kennedy.xls",
+    "kind": "real_corpus",
+    "raw_bytes": 1029744,
+    "sha256": "9af47239ca29dfe20e633f80bbbb9a4cc9783d0803d7b2b5626f42e4c3790420",
+    "direct_zlib_bytes": 203992,
+    "prior_framework_bytes": 203992,
+    "new_framework_bytes": 175157,
+    "selected_mode": 9,
+    "selected_width": null,
+    "best_fold_bytes": 175157,
+    "prior_search_seconds": 6.345904007000172,
+    "additional_folding_seconds": 0.45892033599966453,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 230873
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 210356
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 226186
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 250752
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 262415
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 296665
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 315348
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 175157
+      }
+    ]
+  },
+  {
+    "name": "canterbury/lcet10.txt",
+    "kind": "real_corpus",
+    "raw_bytes": 426754,
+    "sha256": "5314ba1dbb03f471df88bec6cd120a938ef60d0fd3511c5c1dce61bf7463245f",
+    "direct_zlib_bytes": 144904,
+    "prior_framework_bytes": 138138,
+    "new_framework_bytes": 138138,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 214242,
+    "prior_search_seconds": 9.343585317000361,
+    "additional_folding_seconds": 0.188321563000045,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 214242
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 259248
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 270679
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 273873
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 275860
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 278103
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 278380
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 241183
+      }
+    ]
+  },
+  {
+    "name": "canterbury/plrabn12.txt",
+    "kind": "real_corpus",
+    "raw_bytes": 481861,
+    "sha256": "07e2e0b461af78c7c647cb53dab39de560198e16f799b4516eccf0fbd69f764c",
+    "direct_zlib_bytes": 195261,
+    "prior_framework_bytes": 188389,
+    "new_framework_bytes": 188389,
+    "selected_mode": 6,
+    "selected_width": null,
+    "best_fold_bytes": 265253,
+    "prior_search_seconds": 10.551270693000333,
+    "additional_folding_seconds": 0.2577074200003153,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 265253
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 301446
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 306538
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 306725
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 306966
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 307117
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 307003
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 280753
+      }
+    ]
+  },
+  {
+    "name": "canterbury/ptt5",
+    "kind": "real_corpus",
+    "raw_bytes": 513216,
+    "sha256": "0ec3a75089bb52342813496b17e51377bc9eba3cb519a444d67025354841d650",
+    "direct_zlib_bytes": 56465,
+    "prior_framework_bytes": 53384,
+    "new_framework_bytes": 53384,
+    "selected_mode": 5,
+    "selected_width": null,
+    "best_fold_bytes": 60574,
+    "prior_search_seconds": 2.1535247010001513,
+    "additional_folding_seconds": 0.17767428500019378,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 60574
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 61864
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 62631
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 74101
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 87223
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 93446
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 97221
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 73148
+      }
+    ]
+  },
+  {
+    "name": "canterbury/sum",
+    "kind": "real_corpus",
+    "raw_bytes": 38240,
+    "sha256": "ee5733cd76ecc2f9d8ff156adc3c02a7a851051dcf43a2d56ff4ee4ff606bdb3",
+    "direct_zlib_bytes": 12990,
+    "prior_framework_bytes": 12990,
+    "new_framework_bytes": 12990,
+    "selected_mode": 1,
+    "selected_width": null,
+    "best_fold_bytes": 14056,
+    "prior_search_seconds": 0.2639737259996764,
+    "additional_folding_seconds": 0.011931969000215759,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 14056
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 14727
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 16183
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 17389
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 19002
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 20230
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 22034
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 20178
+      }
+    ]
+  },
+  {
+    "name": "canterbury/xargs.1",
+    "kind": "real_corpus",
+    "raw_bytes": 4227,
+    "sha256": "c58aeb5d2d1e12751d47e7412b45784405fc30a5671b03d480fa05776e183619",
+    "direct_zlib_bytes": 1736,
+    "prior_framework_bytes": 1736,
+    "new_framework_bytes": 1736,
+    "selected_mode": 1,
+    "selected_width": null,
+    "best_fold_bytes": 2197,
+    "prior_search_seconds": 0.09361360799994145,
+    "additional_folding_seconds": 0.000849646999995457,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 2197
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 2583
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 2786
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 2829
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 2832
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 2831
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 2835
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 2546
+      }
+    ]
+  },
+  {
+    "name": "models/hello_world_float.tflite",
+    "kind": "real_small_model",
+    "raw_bytes": 3164,
+    "sha256": "ee939863195ca37ce063b18e14fb82aa0d98db6596ba41095757f6b560da1070",
+    "direct_zlib_bytes": 2039,
+    "prior_framework_bytes": 2034,
+    "new_framework_bytes": 2034,
+    "selected_mode": 5,
+    "selected_width": null,
+    "best_fold_bytes": 2085,
+    "prior_search_seconds": 0.040116956000019854,
+    "additional_folding_seconds": 0.0012231759997121117,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 2085
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 2099
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 2240
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 2398
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 2457
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 2493
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 2512
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 2332
+      }
+    ]
+  },
+  {
+    "name": "models/hello_world_int8.tflite",
+    "kind": "real_small_model",
+    "raw_bytes": 2704,
+    "sha256": "505ee4fae7fa46ab67bea4c08b4969eb3eb8b9114c50595ec4a29d9a27993202",
+    "direct_zlib_bytes": 1300,
+    "prior_framework_bytes": 1282,
+    "new_framework_bytes": 1282,
+    "selected_mode": 5,
+    "selected_width": null,
+    "best_fold_bytes": 1359,
+    "prior_search_seconds": 0.0251249790003385,
+    "additional_folding_seconds": 0.0013862050000170711,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 1359
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 1395
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 1540
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 1682
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 1770
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 1786
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 1805
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 1586
+      }
+    ]
+  },
+  {
+    "name": "models/audio_preprocessor_float.tflite",
+    "kind": "real_small_model",
+    "raw_bytes": 7760,
+    "sha256": "684c7e4727409e26759cbb13e587fe25345a2cca163616e22a83d9265ea11644",
+    "direct_zlib_bytes": 4155,
+    "prior_framework_bytes": 3982,
+    "new_framework_bytes": 3908,
+    "selected_mode": 8,
+    "selected_width": 2,
+    "best_fold_bytes": 3908,
+    "prior_search_seconds": 0.06855979300007675,
+    "additional_folding_seconds": 0.003033654000319075,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 3908
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 4080
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 4425
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 4727
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 4913
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 5053
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 5149
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 4950
+      }
+    ]
+  },
+  {
+    "name": "models/audio_preprocessor_int8.tflite",
+    "kind": "real_small_model",
+    "raw_bytes": 8772,
+    "sha256": "278949d197166fb8b580c0bdc94e902fb709fec0569dcf5766816b28285440e5",
+    "direct_zlib_bytes": 4528,
+    "prior_framework_bytes": 4303,
+    "new_framework_bytes": 4273,
+    "selected_mode": 8,
+    "selected_width": 2,
+    "best_fold_bytes": 4273,
+    "prior_search_seconds": 0.0737292730000263,
+    "additional_folding_seconds": 0.003612052999869775,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 4273
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 4435
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 4836
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 5180
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 5435
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 5569
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 5725
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 5363
+      }
+    ]
+  },
+  {
+    "name": "models/micro_speech_quantized.tflite",
+    "kind": "real_small_model",
+    "raw_bytes": 18800,
+    "sha256": "09e5e2a9dfb2d8ed78802bf18ce297bff54281a66ca18e0c23d69ca14f822a83",
+    "direct_zlib_bytes": 15200,
+    "prior_framework_bytes": 15186,
+    "new_framework_bytes": 15186,
+    "selected_mode": 5,
+    "selected_width": null,
+    "best_fold_bytes": 15345,
+    "prior_search_seconds": 0.21413292100032777,
+    "additional_folding_seconds": 0.004421091000040178,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 15345
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 15351
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 15440
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 15553
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 15629
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 15655
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 15694
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 15541
+      }
+    ]
+  },
+  {
+    "name": "fp32_normal",
+    "kind": "synthetic_control",
+    "raw_bytes": 262144,
+    "sha256": "56a7fb0c8c5f325384019d1ab4bc02c4a4be45e7be28974cc1602ac3c41ba5bf",
+    "direct_zlib_bytes": 242757,
+    "prior_framework_bytes": 242757,
+    "new_framework_bytes": 223440,
+    "selected_mode": 8,
+    "selected_width": 4,
+    "best_fold_bytes": 223440,
+    "prior_search_seconds": 5.9753793199997745,
+    "additional_folding_seconds": 0.16445006200001444,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 235331
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 223440
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 227300
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 229562
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 231779
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 233797
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 234690
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 242766
+      }
+    ]
+  },
+  {
+    "name": "fp16_normal",
+    "kind": "synthetic_control",
+    "raw_bytes": 131072,
+    "sha256": "01be469b0731ecd32aa443a9dba4ee83d60bff57dc60f80d6137ce8b89a7d194",
+    "direct_zlib_bytes": 120923,
+    "prior_framework_bytes": 120923,
+    "new_framework_bytes": 112438,
+    "selected_mode": 8,
+    "selected_width": 2,
+    "best_fold_bytes": 112438,
+    "prior_search_seconds": 2.1836831440000424,
+    "additional_folding_seconds": 0.04692046999980448,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 112438
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 114488
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 118161
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 121151
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 121413
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 121486
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 121510
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 120903
+      }
+    ]
+  },
+  {
+    "name": "bf16_like",
+    "kind": "synthetic_control",
+    "raw_bytes": 131072,
+    "sha256": "59b33bda5c1d0c354eb598b58f3ca0d90a85e93eb891d1d3e497ab24cc305420",
+    "direct_zlib_bytes": 103883,
+    "prior_framework_bytes": 103883,
+    "new_framework_bytes": 92299,
+    "selected_mode": 8,
+    "selected_width": 2,
+    "best_fold_bytes": 92299,
+    "prior_search_seconds": 4.6569140139999945,
+    "additional_folding_seconds": 0.1391090450001684,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 92299
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 96156
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 98432
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 99206
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 99555
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 99703
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 99902
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 104005
+      }
+    ]
+  },
+  {
+    "name": "random",
+    "kind": "synthetic_control",
+    "raw_bytes": 131072,
+    "sha256": "f731b2e7c538881a38d564c53c225a7df48c7a2a57adabb002e216d0db85b565",
+    "direct_zlib_bytes": 131118,
+    "prior_framework_bytes": 131072,
+    "new_framework_bytes": 131072,
+    "selected_mode": 0,
+    "selected_width": null,
+    "best_fold_bytes": 131118,
+    "prior_search_seconds": 2.9263879210002415,
+    "additional_folding_seconds": 0.026747962000172265,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 131119
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 131119
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 131119
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 131119
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 131119
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 131119
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 131119
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 131118
+      }
+    ]
+  },
+  {
+    "name": "already_compressed",
+    "kind": "synthetic_control",
+    "raw_bytes": 242757,
+    "sha256": "9e5042efb6706a74b0a10baefb9e0b89b5ffc164e7b9ea2a0f4815a999414fc6",
+    "direct_zlib_bytes": 242838,
+    "prior_framework_bytes": 242757,
+    "new_framework_bytes": 242757,
+    "selected_mode": 0,
+    "selected_width": null,
+    "best_fold_bytes": 242838,
+    "prior_search_seconds": 5.983934585000043,
+    "additional_folding_seconds": 0.048846877999949356,
+    "exact_roundtrip": true,
+    "lane_trials": [
+      {
+        "mode": 8,
+        "width": 2,
+        "bytes": 242839
+      },
+      {
+        "mode": 8,
+        "width": 4,
+        "bytes": 242839
+      },
+      {
+        "mode": 8,
+        "width": 8,
+        "bytes": 242839
+      },
+      {
+        "mode": 8,
+        "width": 16,
+        "bytes": 242839
+      },
+      {
+        "mode": 8,
+        "width": 32,
+        "bytes": 242839
+      },
+      {
+        "mode": 8,
+        "width": 64,
+        "bytes": 242839
+      },
+      {
+        "mode": 8,
+        "width": 128,
+        "bytes": 242839
+      },
+      {
+        "mode": 9,
+        "width": null,
+        "bytes": 242838
+      }
+    ]
+  }
+]

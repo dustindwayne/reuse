@@ -1,0 +1,20 @@
+[
+  {
+    "corpus": "canterbury",
+    "archive_bytes": 639478,
+    "inner_bytes": 683998,
+    "outer_zlib": true,
+    "encode_seconds": 35.94346744299992,
+    "decode_seconds": 0.4517830370000411,
+    "exact_roundtrip": true
+  },
+  {
+    "corpus": "calgary",
+    "archive_bytes": 987800,
+    "inner_bytes": 987988,
+    "outer_zlib": true,
+    "encode_seconds": 56.926947949999885,
+    "decode_seconds": 0.6793651880002471,
+    "exact_roundtrip": true
+  }
+]

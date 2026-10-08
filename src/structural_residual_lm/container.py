@@ -3,17 +3,27 @@ import hashlib,json,struct,zlib
 from .adaptive import encode as adaptive_encode, decode as adaptive_decode
 from .grid import encode as grid_encode, decode as grid_decode
 from .lossless import Grammar
+from .folding import candidates as fold_candidates,unfold,untriplet313
 
 
-def select(raw):
+def select(raw,folding=True):
     candidates=[(0,raw),(1,zlib.compress(raw)),(2,adaptive_encode(raw)),
                 (3,Grammar.build(raw,max_merges=32).dumps()),(4,grid_encode(raw))]
     candidates += [(mode+3,zlib.compress(payload)) for mode,payload in candidates if mode in (2,3,4)]
+    if folding:
+        candidates += fold_candidates(raw)
     mode,payload=min(candidates,key=lambda x:len(x[1]))
     return mode,payload
 
 
 def restore(mode,payload):
+    if mode in (8,9):
+        try:
+            if mode==8:
+                if not payload:raise ValueError("Missing fold width")
+                return unfold(zlib.decompress(payload[1:]),payload[0])
+            return untriplet313(zlib.decompress(payload))
+        except zlib.error as e:raise ValueError("Invalid folded payload") from e
     if mode in (5,6,7):
         try: transformed=zlib.decompress(payload)
         except zlib.error as e: raise ValueError('Invalid compressed transform') from e

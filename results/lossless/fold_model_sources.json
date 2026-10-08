@@ -1,0 +1,41 @@
+{
+  "repository": "tensorflow/tflite-micro",
+  "tree": "904193e691ede876f4b8b70e6abe68ae464072f9",
+  "files": [
+    {
+      "path": "tensorflow/lite/micro/examples/hello_world/models/hello_world_float.tflite",
+      "local_name": "hello_world_float.tflite",
+      "bytes": 3164,
+      "git_blob": "f741b3a7b6b63a476832b4f95c3199b7b8b7e17e",
+      "sha256": "ee939863195ca37ce063b18e14fb82aa0d98db6596ba41095757f6b560da1070"
+    },
+    {
+      "path": "tensorflow/lite/micro/examples/hello_world/models/hello_world_int8.tflite",
+      "local_name": "hello_world_int8.tflite",
+      "bytes": 2704,
+      "git_blob": "9a379ea9d93ed1662117d4ebc659e3cc8667f192",
+      "sha256": "505ee4fae7fa46ab67bea4c08b4969eb3eb8b9114c50595ec4a29d9a27993202"
+    },
+    {
+      "path": "tensorflow/lite/micro/examples/micro_speech/models/audio_preprocessor_float.tflite",
+      "local_name": "audio_preprocessor_float.tflite",
+      "bytes": 7760,
+      "git_blob": "8f91ec7839de71236f0f6e35c9912d41f889b716",
+      "sha256": "684c7e4727409e26759cbb13e587fe25345a2cca163616e22a83d9265ea11644"
+    },
+    {
+      "path": "tensorflow/lite/micro/examples/micro_speech/models/audio_preprocessor_int8.tflite",
+      "local_name": "audio_preprocessor_int8.tflite",
+      "bytes": 8772,
+      "git_blob": "790087b76697027f7026a75a92449e189d0beb99",
+      "sha256": "278949d197166fb8b580c0bdc94e902fb709fec0569dcf5766816b28285440e5"
+    },
+    {
+      "path": "tensorflow/lite/micro/examples/micro_speech/models/micro_speech_quantized.tflite",
+      "local_name": "micro_speech_quantized.tflite",
+      "bytes": 18800,
+      "git_blob": "4d10b2ee2378c4f85ce5c58b2bd11ce18b3d09be",
+      "sha256": "09e5e2a9dfb2d8ed78802bf18ce297bff54281a66ca18e0c23d69ca14f822a83"
+    }
+  ]
+}

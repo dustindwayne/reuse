@@ -24,7 +24,7 @@ report=dict(source_repository='https://github.com/pfalcon/canterbury-corpus',
             source_tree='c380ef9dc1dc62691757fdfeebdc2f85710e1e46',
             environment=dict(python=sys.version,platform=platform.platform(),zlib=zlib.ZLIB_RUNTIME_VERSION),
             repeats=a.repeats,files=[],archives=[])
-algorithm_files=('container.py','adaptive.py','grid.py','lossless.py')
+algorithm_files=('container.py','adaptive.py','grid.py','lossless.py','folding.py')
 report['algorithm_sha256']={name:hashlib.sha256((Path(__file__).resolve().parents[1]/'src/structural_residual_lm'/name).read_bytes()).hexdigest() for name in algorithm_files}
 report['parameters']={'outer_chunk_sizes':[4096,32768],'grammar_merges':32,'dynamic_max_window':1024,'dynamic_min_split':16,'zlib_level':6}
 

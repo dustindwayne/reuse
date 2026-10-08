@@ -31,6 +31,10 @@ The [adaptive experiment](docs/ADAPTIVE.md) selects window sizes by actual encod
 
 The [pattern-first path](docs/PATTERN_FIRST.md) finds exact reusable ranges before establishing literal boundaries, including shifted data and cross-file matches. It stores backward references and applies the remaining framework to new literal data. Shifted-copy tests improve substantially; the current greedy matcher slightly enlarges the real-corpus archives against the same pipeline without matching. Run `python scripts/container.py pack --patterns example.ptf data/train.txt data/validation.txt`.
 
+## Recovered lane transforms and complete-path selection
+
+The [recovered-framework integration](docs/RECOVERED_INTEGRATION.md) adds reversible lane folding and a 3/1/3 permutation before zlib. It also compares pooled, pattern-first and file-aware complete archives. Calgary’s archive improves by 3.94% against the prior complete path; Canterbury retains its smaller existing encoding. Run `python scripts/container.py pack --auto example.udf data/train.txt data/validation.txt`.
+
 ## Earlier lossy experiment
 
 The sections below describe the earlier implementation and its historical measurements. It did not implement the lossless shared representation or residual-only neural prediction.
